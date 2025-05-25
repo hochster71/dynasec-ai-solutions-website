@@ -46,6 +46,20 @@
       border-radius: 8px;
       font-weight: bold;
     }
+    .badge {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .badge-cyan { background-color: #00f6ff; color: #000; }
+    .badge-blue { background-color: #007bff; color: #fff; }
+    .badge-orange { background-color: #ffa500; color: #000; }
+    .badge-red { background-color: #ff4136; color: #fff; }
+    .badge-green { background-color: #2ecc40; color: #000; }
+    .badge-gray { background-color: #aaaaaa; color: #000; }
   </style>
 </head>
 <body>
@@ -53,7 +67,7 @@
   <div class="grid" id="marketplace"></div>
 
   <script>
-    fetch('marketplace.json')
+    fetch('marketplace_categorized.json')
       .then(response => response.json())
       .then(data => {
         const grid = document.getElementById('marketplace');
@@ -61,6 +75,7 @@
           const tile = document.createElement('div');
           tile.className = 'tile';
           tile.innerHTML = `
+            <span class="badge badge-${item.badge_color}">${item.category}</span>
             <h2>${item.title}</h2>
             <p>${item.description}</p>
             <a href="${item.stripe_url}" target="_blank">Buy Now</a>
