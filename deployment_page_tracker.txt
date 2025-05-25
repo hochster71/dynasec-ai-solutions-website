@@ -1,0 +1,17 @@
+=== DYNASEC SITE PAGE STATUS TRACKER ===
+
+CIC_Command_Center.html                  📁 Unknown or unverified format
+CIC_Command_Center_FINAL.html            📁 Unknown or unverified format
+CIC_Command_Center_FINAL_SYNCED.html     📁 Unknown or unverified format
+stripe_live_tiles.html                   📁 Unknown or unverified format
+stripe_active_tiles_with_modals.html     📁 Unknown or unverified format
+stripe_full_catalog_live.html            📁 Unknown or unverified format
+stripe_verified_product_grid.html        📁 Unknown or unverified format
+products.html                            📁 Unknown or unverified format
+services.html                            📁 Unknown or unverified format
+products-and-services.html               📁 Unknown or unverified format
+products-and-services-full.html          📁 Unknown or unverified format
+products-grid-62.html                    ✅ Full 62-product unnamed tiles
+products-and-services-final-classified.html ✅ Final version with mixed services/products and legend
+products-and-services-tab2.html          ✅ Tab 2 with 10 additional entries
+products-and-services-20.html            ✅ Contains 20 tiles (partial set)

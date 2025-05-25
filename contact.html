@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us - Dynasec AI Solutions</title>
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #cccccc;
+      margin-bottom: 30px;
+    }
+    form {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      margin-bottom: 15px;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      background-color: #2a2a2a;
+      color: #ffffff;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #888;
+    }
+    button {
+      padding: 12px;
+      background-color: #444;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #666;
+    }
+    .support-link {
+      margin-top: 20px;
+    }
+    .support-link a {
+      color: #00ffff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Contact Command</h1>
+  <p>Dynasec AI Solutions is powered by intelligence and precision. Your inquiry will be reviewed by Command. For urgent support, contact our Support AI.</p>
+  <form action="mailto:michael.b.hoch@gmail.com" method="POST" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="text" name="subject" placeholder="Subject" required />
+    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <div class="support-link">
+    <p>Need help? <a href="support.html">Contact Support AI</a></p>
+  </div>
+</body>
+</html>

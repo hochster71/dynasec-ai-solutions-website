@@ -1,1 +1,1040 @@
-<!DOCTYPE html><html><head><title>Products</title></head><body><h1>Stripe Product Grid Ready</h1></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynasec AI Solutions Verified Product Grid</title>
+  <style>
+    body {
+      background: #000;
+      color: #00ffff;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .tile {
+      background: #0a0a0a;
+      border: 2px solid #00ffff;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .tile a {
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.9);
+    }
+    .modal-content {
+      background-color: #111;
+      margin: 10% auto;
+      padding: 20px;
+      border: 2px solid #00ffff;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 12px;
+      color: #fff;
+    }
+    .close {
+      color: #00ffff;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+      color: red;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .download-link {
+      color: #00ffcc;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Dynasec AI Solutions Verified Product Grid</h1>
+  <div class="grid">
+    
+    <div class="tile" onclick="openModal('modal01')">
+      <h2>EmpireLink CIC Relay Node</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/7sY4gzgsAfKXdvlgRr1ck1s" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal02')">
+      <h2>BioForge GenSecure AI Core</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/7sYfZhdgo1U7bnd7gR1ck1r" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal03')">
+      <h2>EduVerse Student ID SecurePass</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/14A5kDekscyL2QH8kV1ck1q" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal04')">
+      <h2>CivIntel Clearance Monitor</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/7sY9AT90842ffDtat31ck1p" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal05')">
+      <h2>FinShield API VaultGate</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/8x2bJ1dgoaqDgHxfNn1ck1o" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal06')">
+      <h2>AgriDyn PrecisionRisk AI</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/8x2bJ15NWfKXcrh0St1ck1n" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal07')">
+      <h2>Dynasec Partner Launch Kit</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/3cIeVda4c42fcrh1Wx1ck1m" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal08')">
+      <h2>VaultMesh Patent Syndication Hub</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/3cI7sLeksdCP2QHdFf1ck1l" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal09')">
+      <h2>RetailIntel VisualShield</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/14AcN53FOfKXdvl6cN1ck1k" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal10')">
+      <h2>HealthSec PHI Fortress</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/5kQ4gz3FO1U71MD1Wx1ck1j" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal11')">
+      <h2>OrbitalSec Telemetry ThreatLink</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/dRm3cv5NW6an9f59oZ1ck1i" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal12')">
+      <h2>BioForge Pathogen Risk Core</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/eVqcN5b8g7er62TcBb1ck1h" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal13')">
+      <h2>EduVerse FacultySec Pro</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/bJe14ndgo6anbnd6cN1ck1g" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal14')">
+      <h2>CivIntel AI Surveillance Grid</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/9B6aEX2BKdCPbnd7gR1ck1f" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal15')">
+      <h2>FinShield Real-Time Audit Core</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/00w8wPa4cfKX4YPcBb1ck1e" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal16')">
+      <h2>AgriDyn IoT Mesh Sentinel</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/dRm9AT6S07er2QHfNn1ck1d" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal17')">
+      <h2>Dynasec Partner Access License (Full Stack)</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/8x27sLcckcyL62T6cN1ck1c" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal18')">
+      <h2>VaultMind IP Licensing Kit</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/aFa28r9086an8b18kV1ck1b" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal19')">
+      <h2>RetailIntel SignalLock</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/aFa7sL6S01U7gHx1Wx1ck1a" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal20')">
+      <h2>HealthSec ZeroLeak Scan Engine</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/6oUaEX3FO8iv76X44F1ck19" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal21')">
+      <h2>OrbitalSec SpaceOps Command Suite</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/5kQ9ATa4c6an0Iz1Wx1ck18" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal22')">
+      <h2>BioForge ThreatDNA Suite</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/9B64gz3FO7erbndfNn1ck17" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal23')">
+      <h2>EduVerse CampusLock</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/aFa7sL9087erbndcBb1ck16" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal24')">
+      <h2>CivIntel Recon Report Engine</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/3cIaEX0tC2Yb3ULdFf1ck15" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal25')">
+      <h2>FinShield FraudNet AI</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/6oUaEX908fKX3UL7gR1ck14" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal26')">
+      <h2>AgriDyn FieldShield Suite</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/14AaEXb8ggP1crh44F1ck13" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal27')">
+      <h2>Dynasec AI BrandForge</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/fZu9AT90856jdvlgRr1ck12" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal28')">
+      <h2>VaultMind Patent Generator</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/bJe9ATa4c2Yb1MDcBb1ck11" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal29')">
+      <h2>RetailIntel Threat Auditor</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/eVq4gz7W456jbndbx71ck10" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal30')">
+      <h2>HealthSec AI Compliance Core</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/7sYcN57W442f76X7gR1ck0Z" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal31')">
+      <h2>OrbitalSec Satellite Shield</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/8x2bJ1b8gfKX76X30B1ck0Y" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal32')">
+      <h2>CyberForce+ Partner Access License</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/28EeVd1xGeGT2QH44F1ck0X" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal33')">
+      <h2>CIC Application Tracker Pro</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/14A6oHeks42faj9cBb1ck0W" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal34')">
+      <h2>AI Contract Proposal Writer (Gov/Fed)</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/cNiaEXb8gfKX1MD8kV1ck0V" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal35')">
+      <h2>ZeroDay Exploit Risk Shield</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/00w3cvgsAaqDdvlfNn1ck0U" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal36')">
+      <h2>Cloud Risk Recon Report</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/8x228r7W4fKXbnd7gR1ck0T" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal37')">
+      <h2>CommandSim Cyber War Lab</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/fZu3cv0tCgP1fDt8kV1ck0S" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal38')">
+      <h2>CyberNexus Incident Core</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/4gMcN51xG9mz2QH8kV1ck0R" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal39')">
+      <h2>AI Clearance Accelerator</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/7sY3cvgsA9mzcrh7gR1ck0Q" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal40')">
+      <h2>VaultMesh IP Vault Elite</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/8x23cv9080Q3bndcBb1ck0P" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal41')">
+      <h2>RMF ZeroTrust Bundle</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/fZu8wP2BKgP1aj96cN1ck0O" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal42')">
+      <h2>Tactical Ping Alert Engine</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/00wdR96S042faj9bx71ck0N" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal43')">
+      <h2>SecureCloud FedGov LaunchPack</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/aFa28r908eGT0Iz44F1ck0M" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal44')">
+      <h2>FedRamp TurboTrack AI</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/00w14ncckfKXdvl0St1ck0L" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal45')">
+      <h2>Clearance Resume Generator</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/bJe4gzeksbuH62TfNn1ck0K" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal46')">
+      <h2>AI Job Submission Engine</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/fZu14n0tCeGT1MD6cN1ck0J" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal47')">
+      <h2>CMMC Sentinel Watchtower</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/aFacN5a4c2YbbndgRr1ck0I" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal48')">
+      <h2>RMF Compliance Commander</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/14AaEXgsA6an76X6cN1ck0H" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal49')">
+      <h2>eMASS AuthoritySync</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/eVq28rcck7er76X30B1ck0G" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal50')">
+      <h2>BlueTeam SOC Overwatch</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/3cI9ATcck7erbnd44F1ck0F" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal51')">
+      <h2>RedCell PenTest AI Ops</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/3cIbJ15NWdCP76X8kV1ck0E" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal52')">
+      <h2>HealthSec Compliance Core</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/28E7sL4JSeGTezp8kV1ck0D" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal53')">
+      <h2>Zero Trust Security Audit</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/eVq8wPa4caqD3ULat31ck0C" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal54')">
+      <h2>VaultMesh Patent Draft Pack</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/14A5kDb8g9mz8b17gR1ck0B" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal55')">
+      <h2>VaultMesh IP Lock</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/7sY6oH2BKaqDdvlbx71ck0A" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal56')">
+      <h2>CyberForce+ AI ThreatShield</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/bJe3cvgsA2Yb1MD58J1ck0z" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal57')">
+      <h2>Empire Access License</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/bJeeVdb8g2YbgHx9oZ1ck0y" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal58')">
+      <h2>ResumeCore Elite Kit</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/7sY28r1xGbuH4YPbx71ck0x" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal59')">
+      <h2>Proposal Builder Plan</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/00w7sLdgocyLezp9oZ1ck0w" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal60')">
+      <h2>Genova Smart Policy Kit</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/fZu7sL2BK56j4YP30B1ck0v" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal61')">
+      <h2>Partner Grid License Tier 1</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/aFafZheks0Q3gHxfNn1ck0u" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal62')">
+      <h2>CivIntel Insight Bundle</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/00weVdb8g6anaj9bx71ck0t" target="_blank">Buy Now</a>
+    </div>
+    
+    <div class="tile" onclick="openModal('modal63')">
+      <h2>VaultMesh 5x Draft Pack</h2>
+      <p>Status: <strong>ACTIVE</strong></p>
+      <a href="https://buy.stripe.com/5kQ6oH1xGbuHezpdFf1ck0s" target="_blank">Buy Now</a>
+    </div>
+    
+  </div>
+
+  
+    <div id="modal01" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal01')">&times;</span>
+        <h2>EmpireLink CIC Relay Node</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_01.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal02" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal02')">&times;</span>
+        <h2>BioForge GenSecure AI Core</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_02.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal03" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal03')">&times;</span>
+        <h2>EduVerse Student ID SecurePass</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_03.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal04" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal04')">&times;</span>
+        <h2>CivIntel Clearance Monitor</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_04.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal05" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal05')">&times;</span>
+        <h2>FinShield API VaultGate</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_05.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal06" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal06')">&times;</span>
+        <h2>AgriDyn PrecisionRisk AI</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_06.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal07" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal07')">&times;</span>
+        <h2>Dynasec Partner Launch Kit</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_07.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal08" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal08')">&times;</span>
+        <h2>VaultMesh Patent Syndication Hub</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_08.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal09" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal09')">&times;</span>
+        <h2>RetailIntel VisualShield</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_09.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal10" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal10')">&times;</span>
+        <h2>HealthSec PHI Fortress</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_10.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal11" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal11')">&times;</span>
+        <h2>OrbitalSec Telemetry ThreatLink</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_11.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal12" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal12')">&times;</span>
+        <h2>BioForge Pathogen Risk Core</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_12.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal13" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal13')">&times;</span>
+        <h2>EduVerse FacultySec Pro</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_13.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal14" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal14')">&times;</span>
+        <h2>CivIntel AI Surveillance Grid</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_14.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal15" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal15')">&times;</span>
+        <h2>FinShield Real-Time Audit Core</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_15.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal16" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal16')">&times;</span>
+        <h2>AgriDyn IoT Mesh Sentinel</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_16.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal17" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal17')">&times;</span>
+        <h2>Dynasec Partner Access License (Full Stack)</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_17.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal18" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal18')">&times;</span>
+        <h2>VaultMind IP Licensing Kit</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_18.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal19" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal19')">&times;</span>
+        <h2>RetailIntel SignalLock</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_19.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal20" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal20')">&times;</span>
+        <h2>HealthSec ZeroLeak Scan Engine</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_20.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal21" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal21')">&times;</span>
+        <h2>OrbitalSec SpaceOps Command Suite</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_21.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal22" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal22')">&times;</span>
+        <h2>BioForge ThreatDNA Suite</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_22.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal23" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal23')">&times;</span>
+        <h2>EduVerse CampusLock</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_23.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal24" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal24')">&times;</span>
+        <h2>CivIntel Recon Report Engine</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_24.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal25" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal25')">&times;</span>
+        <h2>FinShield FraudNet AI</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_25.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal26" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal26')">&times;</span>
+        <h2>AgriDyn FieldShield Suite</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_26.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal27" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal27')">&times;</span>
+        <h2>Dynasec AI BrandForge</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_27.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal28" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal28')">&times;</span>
+        <h2>VaultMind Patent Generator</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_28.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal29" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal29')">&times;</span>
+        <h2>RetailIntel Threat Auditor</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_29.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal30" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal30')">&times;</span>
+        <h2>HealthSec AI Compliance Core</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_30.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal31" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal31')">&times;</span>
+        <h2>OrbitalSec Satellite Shield</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_31.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal32" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal32')">&times;</span>
+        <h2>CyberForce+ Partner Access License</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_32.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal33" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal33')">&times;</span>
+        <h2>CIC Application Tracker Pro</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_33.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal34" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal34')">&times;</span>
+        <h2>AI Contract Proposal Writer (Gov/Fed)</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_34.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal35" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal35')">&times;</span>
+        <h2>ZeroDay Exploit Risk Shield</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_35.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal36" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal36')">&times;</span>
+        <h2>Cloud Risk Recon Report</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_36.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal37" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal37')">&times;</span>
+        <h2>CommandSim Cyber War Lab</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_37.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal38" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal38')">&times;</span>
+        <h2>CyberNexus Incident Core</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_38.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal39" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal39')">&times;</span>
+        <h2>AI Clearance Accelerator</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_39.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal40" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal40')">&times;</span>
+        <h2>VaultMesh IP Vault Elite</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_40.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal41" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal41')">&times;</span>
+        <h2>RMF ZeroTrust Bundle</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_41.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal42" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal42')">&times;</span>
+        <h2>Tactical Ping Alert Engine</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_42.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal43" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal43')">&times;</span>
+        <h2>SecureCloud FedGov LaunchPack</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_43.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal44" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal44')">&times;</span>
+        <h2>FedRamp TurboTrack AI</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_44.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal45" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal45')">&times;</span>
+        <h2>Clearance Resume Generator</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_45.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal46" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal46')">&times;</span>
+        <h2>AI Job Submission Engine</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_46.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal47" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal47')">&times;</span>
+        <h2>CMMC Sentinel Watchtower</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_47.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal48" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal48')">&times;</span>
+        <h2>RMF Compliance Commander</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_48.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal49" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal49')">&times;</span>
+        <h2>eMASS AuthoritySync</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_49.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal50" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal50')">&times;</span>
+        <h2>BlueTeam SOC Overwatch</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_50.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal51" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal51')">&times;</span>
+        <h2>RedCell PenTest AI Ops</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_51.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal52" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal52')">&times;</span>
+        <h2>HealthSec Compliance Core</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_52.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal53" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal53')">&times;</span>
+        <h2>Zero Trust Security Audit</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_53.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal54" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal54')">&times;</span>
+        <h2>VaultMesh Patent Draft Pack</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_54.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal55" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal55')">&times;</span>
+        <h2>VaultMesh IP Lock</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_55.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal56" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal56')">&times;</span>
+        <h2>CyberForce+ AI ThreatShield</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_56.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal57" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal57')">&times;</span>
+        <h2>Empire Access License</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_57.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal58" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal58')">&times;</span>
+        <h2>ResumeCore Elite Kit</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_58.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal59" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal59')">&times;</span>
+        <h2>Proposal Builder Plan</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_59.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal60" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal60')">&times;</span>
+        <h2>Genova Smart Policy Kit</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_60.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal61" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal61')">&times;</span>
+        <h2>Partner Grid License Tier 1</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_61.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal62" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal62')">&times;</span>
+        <h2>CivIntel Insight Bundle</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_62.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+    <div id="modal63" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal63')">&times;</span>
+        <h2>VaultMesh 5x Draft Pack</h2>
+        <p>Product description and technical specs are available in the download below.</p>
+        <a href="/pdfs/product_63.pdf" target="_blank" class="download-link">📄 Download Brief</a>
+      </div>
+    </div>
+    
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+    function closeModal(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>

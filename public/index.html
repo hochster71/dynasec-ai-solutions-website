@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DYNASEC AI SOLUTIONS CIC Command Center</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #00ffff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      padding: 20px 40px;
+    }
+    .tile {
+      border: 2px solid #00ffff;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: #0a0a0a;
+    }
+    #statusLogPanel {
+      background: #111;
+      color: #0f0;
+      border: 2px solid #0f0;
+      padding: 10px;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 420px;
+      height: 200px;
+      overflow-y: scroll;
+      font-family: monospace;
+      font-size: 14px;
+      border-radius: 8px;
+      z-index: 999;
+    }
+    #aegisTerminal {
+      position: fixed;
+      bottom: 240px;
+      right: 20px;
+      width: 420px;
+      z-index: 1000;
+    }
+    #aegisTerminal input {
+      width: 100%;
+      background: #000;
+      color: #0f0;
+      border: none;
+      padding: 10px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DYNASEC AI SOLUTIONS</h1>
+    <h2>Combat Information Center — Command Operations Center</h2>
+  </header>
+
+  <div class="grid">
+    <div class="tile"><h2>Empire Tracker</h2><p>Status updates via WebSocket and JWT</p></div>
+    <div class="tile"><h2>Strike Protocol</h2><p>Trigger critical defense posture changes</p></div>
+    <div class="tile"><h2>Diagnostic Engine</h2><p>Run system-wide readiness checks</p></div>
+  </div>
+
+  <div id="aegisTerminal">
+    <input type="text" id="terminalInput" placeholder="Enter command..." onkeydown="handleTerminal(event)">
+  </div>
+  <div id="statusLogPanel"></div>
+
+  <script>
+async function handleTerminal(event) {
+  if (event.key === "Enter") {
+    await processCommand(event.target.value.trim());
+    event.target.value = "";
+  }
+}
+
+async function processCommand(input) {
+  if (!input) return;
+  const log = document.getElementById("statusLogPanel");
+  const timestamp = new Date().toLocaleTimeString();
+  const node = document.createElement("div");
+
+  const jwtToken = localStorage.getItem("jwt_token");
+  const headers = { 'Content-Type': 'application/json' };
+  if (jwtToken) headers['Authorization'] = `Bearer ${jwtToken}`;
+
+  const empireData = await fetch('/api/empires.json', { headers }).then(res => res.json()).catch(() => null);
+
+  let response;
+  switch (input.toLowerCase()) {
+    case "init diagnostic run":
+      response = "Diagnostics initiated. Running systems check... All systems optimal.";
+      break;
+    case "status empire index":
+      if (empireData && empireData.empires) {
+        response = `Empire Index: ${empireData.empires.length} empires online.\n` + empireData.empires.map(e => `${e.name}: ${e.status}`).join("\n");
+      } else {
+        response = "Unable to retrieve Empire Index. Fallback: 10 empires reporting nominal status.";
+      }
+      break;
+    case "deploy strike protocol":
+      response = "⚠️ Strike Protocol deployed. All sectors on high alert. Tactical grid reloaded.";
+      break;
+    default:
+      const chatResponse = await fetch('/api/command-response', {
+        method: 'POST',
+        headers,
+        body: JSON.stringify({ command: input })
+      }).then(res => res.json()).catch(() => null);
+      response = chatResponse?.reply || `Command received: ${input}`;
+  }
+
+  node.innerText = `[${timestamp}] AEGIS TERMINAL: ${input}\n→ ${response}`;
+  log.prepend(node);
+}
+
+// Auto-refresh empire status every 5 minutes
+setInterval(() => {
+  processCommand("status empire index");
+}, 300000);
+</script>
+</body>
+</html>

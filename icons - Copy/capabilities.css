@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #00ffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+header {
+  text-align: center;
+  padding: 10px 20px 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 20px 30px;
+}
+.tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #00ffff;
+  border-radius: 8px;
+  padding: 12px 10px;
+  background-color: #0a0a0a;
+  transition: transform 0.2s;
+  min-height: 240px;
+}
+.tile:hover {
+  transform: scale(1.01);
+}
+.tile h2 {
+  font-size: 0.85rem;
+  margin: 6px 0;
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+.tagline {
+  font-size: 0.72rem;
+  margin: 4px 0;
+  color: #b6fdfd;
+  text-align: center;
+}
+.proof {
+  display: block;
+  font-size: 0.65rem;
+  color: #ccc;
+  margin-bottom: 6px;
+  text-align: center;
+}
+.tile-icon {
+  width: 28px;
+  height: 28px;
+  margin: 4px auto 8px;
+  filter: drop-shadow(0 0 4px #00ffff);
+  display: block;
+}
+.buy-btn {
+  margin-top: auto;
+  text-decoration: none;
+  color: #000;
+  background-color: #00ffff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.72rem;
+  text-align: center;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8rem;
+  color: #aaa;
+  background-color: #000;
+}
