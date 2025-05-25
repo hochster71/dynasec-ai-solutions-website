@@ -82,7 +82,7 @@
   <h1>Dynasec AI Solutions Marketplace</h1>
   <div class="filter-bar">
     <input type="text" id="searchInput" placeholder="Search products..." />
-    <select id="sortControl"><option value="az">Sort: A–Z</option><option value="za">Sort: Z–A</option></select><select id="categoryFilter">
+    <select id="categoryFilter">
       <option value="All">All Categories</option>
       <option value="AI Apps">AI Apps</option>
       <option value="Compliance Tools">Compliance Tools</option>
@@ -97,7 +97,7 @@
   <script>
     let allData = [];
 
-    fetch('marketplace_corrected_tiles.json')
+    fetch('marketplace_full_tiles.json')
       .then(response => response.json())
       .then(data => {
         allData = data;
@@ -137,28 +137,6 @@
 
     document.getElementById('searchInput').addEventListener('input', applyFilters);
     document.getElementById('categoryFilter').addEventListener('change', applyFilters);
-  
-    document.getElementById('sortControl').addEventListener('change', applyFilters);
-
-    function applyFilters() {
-      const search = document.getElementById('searchInput').value.toLowerCase();
-      const category = document.getElementById('categoryFilter').value;
-      const sort = document.getElementById('sortControl').value;
-
-      let filtered = allData.filter(item => {
-        const matchTitle = item.title.toLowerCase().includes(search);
-        const matchCategory = category === 'All' || item.category === category;
-        return matchTitle && matchCategory;
-      });
-
-      if (sort === 'az') {
-        filtered.sort((a, b) => a.title.localeCompare(b.title));
-      } else if (sort === 'za') {
-        filtered.sort((a, b) => b.title.localeCompare(a.title));
-      }
-
-      renderTiles(filtered);
-    }
-    </script>
+  </script>
 </body>
 </html>

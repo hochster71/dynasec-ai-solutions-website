@@ -1,0 +1,20 @@
+
+<!-- SoundFX Scripts -->
+<audio id="sound-click" src="assets/sounds/click.mp3" preload="auto"></audio>
+<audio id="sound-hover" src="assets/sounds/hover.mp3" preload="auto"></audio>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const clickSound = document.getElementById("sound-click");
+    const hoverSound = document.getElementById("sound-hover");
+
+    document.querySelectorAll('a').forEach(el => {
+      el.addEventListener('click', () => {
+        if (clickSound) clickSound.play();
+      });
+      el.addEventListener('mouseover', () => {
+        if (hoverSound) hoverSound.play();
+      });
+    });
+  });
+</script>

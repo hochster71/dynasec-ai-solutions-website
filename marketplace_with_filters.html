@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dynasec AI Solutions Marketplace</title>
+  <title>Dynasec AI Marketplace</title>
   <style>
     body {
       background-color: #000;
@@ -21,12 +21,10 @@
       text-align: center;
       margin: 20px 0;
     }
-    .filter-bar input,
-    .filter-bar select {
+    select {
       padding: 10px;
       font-size: 14px;
       border-radius: 5px;
-      margin: 5px;
       background: #111;
       color: #00f6ff;
       border: 1px solid #00f6ff;
@@ -69,20 +67,16 @@
       font-size: 12px;
       font-weight: bold;
       margin-bottom: 10px;
+      background-color: #00f6ff;
+      color: #000;
     }
-    .badge-cyan { background-color: #00f6ff; color: #000; }
-    .badge-blue { background-color: #007bff; color: #fff; }
-    .badge-orange { background-color: #ffa500; color: #000; }
-    .badge-red { background-color: #ff4136; color: #fff; }
-    .badge-green { background-color: #2ecc40; color: #000; }
-    .badge-gray { background-color: #aaaaaa; color: #000; }
   </style>
 </head>
 <body>
-  <h1>Dynasec AI Solutions Marketplace</h1>
+  <h1>Dynasec AI Marketplace</h1>
   <div class="filter-bar">
-    <input type="text" id="searchInput" placeholder="Search products..." />
-    <select id="sortControl"><option value="az">Sort: A–Z</option><option value="za">Sort: Z–A</option></select><select id="categoryFilter">
+    <label for="categoryFilter">Filter by Category:</label>
+    <select id="categoryFilter">
       <option value="All">All Categories</option>
       <option value="AI Apps">AI Apps</option>
       <option value="Compliance Tools">Compliance Tools</option>
@@ -97,7 +91,7 @@
   <script>
     let allData = [];
 
-    fetch('marketplace_corrected_tiles.json')
+    fetch('marketplace_full_tiles.json')
       .then(response => response.json())
       .then(data => {
         allData = data;
@@ -108,11 +102,10 @@
       const grid = document.getElementById('marketplace');
       grid.innerHTML = '';
       data.forEach(item => {
-        const badgeClass = item.badge_color ? `badge-${item.badge_color}` : 'badge-gray';
         const tile = document.createElement('div');
         tile.className = 'tile';
         tile.innerHTML = `
-          <span class="badge ${badgeClass}">${item.category || 'AI Product'}</span>
+          <span class="badge">${item.category || 'AI Product'}</span>
           <h2>${item.title}</h2>
           <p>${item.description}</p>
           <a href="${item.stripe_url}" target="_blank">Buy Now</a>
@@ -122,43 +115,14 @@
       });
     }
 
-    function applyFilters() {
-      const search = document.getElementById('searchInput').value.toLowerCase();
-      const category = document.getElementById('categoryFilter').value;
-
-      const filtered = allData.filter(item => {
-        const matchTitle = item.title.toLowerCase().includes(search);
-        const matchCategory = category === 'All' || item.category === category;
-        return matchTitle && matchCategory;
-      });
-
-      renderTiles(filtered);
-    }
-
-    document.getElementById('searchInput').addEventListener('input', applyFilters);
-    document.getElementById('categoryFilter').addEventListener('change', applyFilters);
-  
-    document.getElementById('sortControl').addEventListener('change', applyFilters);
-
-    function applyFilters() {
-      const search = document.getElementById('searchInput').value.toLowerCase();
-      const category = document.getElementById('categoryFilter').value;
-      const sort = document.getElementById('sortControl').value;
-
-      let filtered = allData.filter(item => {
-        const matchTitle = item.title.toLowerCase().includes(search);
-        const matchCategory = category === 'All' || item.category === category;
-        return matchTitle && matchCategory;
-      });
-
-      if (sort === 'az') {
-        filtered.sort((a, b) => a.title.localeCompare(b.title));
-      } else if (sort === 'za') {
-        filtered.sort((a, b) => b.title.localeCompare(a.title));
+    document.getElementById('categoryFilter').addEventListener('change', function () {
+      const selected = this.value;
+      if (selected === 'All') {
+        renderTiles(allData);
+      } else {
+        renderTiles(allData.filter(item => item.category === selected));
       }
-
-      renderTiles(filtered);
-    }
-    </script>
+    });
+  </script>
 </body>
 </html>
