@@ -2,1039 +2,2248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dynasec AI Solutions Verified Product Grid</title>
-  <style>
-    body {
-      background: #000;
-      color: #00ffff;
-      font-family: 'Segoe UI', sans-serif;
-      padding: 40px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Dynasec AI Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    
+<style>
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 60px;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+    background-color: #111;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #00ffff;
+    width: 80%;
+    color: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+.close {
+    color: #00ffff;
+    position: absolute;
+    top: 15px; right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover {
+    color: white;
+}
+.badge-AI-Defense {
+    background-color: #ff4b5c;
+    color: #000;
+}
+.badge-Quantum-Security {
+    background-color: #3ae374;
+    color: #000;
+}
+.badge-Data-Integrity {
+    background-color: #17c0eb;
+    color: #000;
+}
+.badge-Compliance-Tools {
+    background-color: #ffa801;
+    color: #000;
+}
+.badge-Cyber-Operations {
+    background-color: #9c88ff;
+    color: #000;
+}
+</style>
+
+<script>
+function openModal(id) {
+    document.getElementById(id).style.display = 'block';
+}
+function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+}
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+        event.target.style.display = 'none';
     }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 20px;
-    }
-    .tile {
-      background: #0a0a0a;
-      border: 2px solid #00ffff;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
-      cursor: pointer;
-    }
-    .tile a {
-      color: #00ffcc;
-      text-decoration: none;
-      font-weight: bold;
-      display: block;
-      margin-top: 10px;
-    }
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0,0,0,0.9);
-    }
-    .modal-content {
-      background-color: #111;
-      margin: 10% auto;
-      padding: 20px;
-      border: 2px solid #00ffff;
-      width: 80%;
-      max-width: 600px;
-      border-radius: 12px;
-      color: #fff;
-    }
-    .close {
-      color: #00ffff;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-    }
-    .close:hover,
-    .close:focus {
-      color: red;
-      text-decoration: none;
-      cursor: pointer;
-    }
-    .download-link {
-      color: #00ffcc;
-      font-weight: bold;
-      display: inline-block;
-      margin-top: 10px;
-    }
-  </style>
+}
+</script>
+
+    
+<style>
+.buy-button {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #00ffff;
+    color: #000;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.buy-button:hover {
+    background-color: #00ccff;
+}
+</style>
+
 </head>
 <body>
+    <header class="header">
+        <h1 class="logo">DYNASEC AI SOLUTIONS</h1>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="marketplace.html">Marketplace</a>
+            <a href="products.html">Products</a>
+            <a href="services.html">Services</a>
+            <a href="support.html">Support</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-  <h1>Dynasec AI Solutions Verified Product Grid</h1>
-  <div class="grid">
-    
-    <div class="tile" onclick="openModal('modal01')">
-      <h2>EmpireLink CIC Relay Node</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/7sY4gzgsAfKXdvlgRr1ck1s" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal02')">
-      <h2>BioForge GenSecure AI Core</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/7sYfZhdgo1U7bnd7gR1ck1r" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal03')">
-      <h2>EduVerse Student ID SecurePass</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/14A5kDekscyL2QH8kV1ck1q" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal04')">
-      <h2>CivIntel Clearance Monitor</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/7sY9AT90842ffDtat31ck1p" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal05')">
-      <h2>FinShield API VaultGate</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/8x2bJ1dgoaqDgHxfNn1ck1o" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal06')">
-      <h2>AgriDyn PrecisionRisk AI</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/8x2bJ15NWfKXcrh0St1ck1n" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal07')">
-      <h2>Dynasec Partner Launch Kit</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/3cIeVda4c42fcrh1Wx1ck1m" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal08')">
-      <h2>VaultMesh Patent Syndication Hub</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/3cI7sLeksdCP2QHdFf1ck1l" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal09')">
-      <h2>RetailIntel VisualShield</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/14AcN53FOfKXdvl6cN1ck1k" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal10')">
-      <h2>HealthSec PHI Fortress</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/5kQ4gz3FO1U71MD1Wx1ck1j" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal11')">
-      <h2>OrbitalSec Telemetry ThreatLink</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/dRm3cv5NW6an9f59oZ1ck1i" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal12')">
-      <h2>BioForge Pathogen Risk Core</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/eVqcN5b8g7er62TcBb1ck1h" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal13')">
-      <h2>EduVerse FacultySec Pro</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/bJe14ndgo6anbnd6cN1ck1g" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal14')">
-      <h2>CivIntel AI Surveillance Grid</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/9B6aEX2BKdCPbnd7gR1ck1f" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal15')">
-      <h2>FinShield Real-Time Audit Core</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/00w8wPa4cfKX4YPcBb1ck1e" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal16')">
-      <h2>AgriDyn IoT Mesh Sentinel</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/dRm9AT6S07er2QHfNn1ck1d" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal17')">
-      <h2>Dynasec Partner Access License (Full Stack)</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/8x27sLcckcyL62T6cN1ck1c" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal18')">
-      <h2>VaultMind IP Licensing Kit</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/aFa28r9086an8b18kV1ck1b" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal19')">
-      <h2>RetailIntel SignalLock</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/aFa7sL6S01U7gHx1Wx1ck1a" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal20')">
-      <h2>HealthSec ZeroLeak Scan Engine</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/6oUaEX3FO8iv76X44F1ck19" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal21')">
-      <h2>OrbitalSec SpaceOps Command Suite</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/5kQ9ATa4c6an0Iz1Wx1ck18" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal22')">
-      <h2>BioForge ThreatDNA Suite</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/9B64gz3FO7erbndfNn1ck17" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal23')">
-      <h2>EduVerse CampusLock</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/aFa7sL9087erbndcBb1ck16" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal24')">
-      <h2>CivIntel Recon Report Engine</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/3cIaEX0tC2Yb3ULdFf1ck15" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal25')">
-      <h2>FinShield FraudNet AI</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/6oUaEX908fKX3UL7gR1ck14" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal26')">
-      <h2>AgriDyn FieldShield Suite</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/14AaEXb8ggP1crh44F1ck13" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal27')">
-      <h2>Dynasec AI BrandForge</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/fZu9AT90856jdvlgRr1ck12" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal28')">
-      <h2>VaultMind Patent Generator</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/bJe9ATa4c2Yb1MDcBb1ck11" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal29')">
-      <h2>RetailIntel Threat Auditor</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/eVq4gz7W456jbndbx71ck10" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal30')">
-      <h2>HealthSec AI Compliance Core</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/7sYcN57W442f76X7gR1ck0Z" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal31')">
-      <h2>OrbitalSec Satellite Shield</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/8x2bJ1b8gfKX76X30B1ck0Y" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal32')">
-      <h2>CyberForce+ Partner Access License</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/28EeVd1xGeGT2QH44F1ck0X" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal33')">
-      <h2>CIC Application Tracker Pro</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/14A6oHeks42faj9cBb1ck0W" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal34')">
-      <h2>AI Contract Proposal Writer (Gov/Fed)</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/cNiaEXb8gfKX1MD8kV1ck0V" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal35')">
-      <h2>ZeroDay Exploit Risk Shield</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/00w3cvgsAaqDdvlfNn1ck0U" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal36')">
-      <h2>Cloud Risk Recon Report</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/8x228r7W4fKXbnd7gR1ck0T" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal37')">
-      <h2>CommandSim Cyber War Lab</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/fZu3cv0tCgP1fDt8kV1ck0S" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal38')">
-      <h2>CyberNexus Incident Core</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/4gMcN51xG9mz2QH8kV1ck0R" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal39')">
-      <h2>AI Clearance Accelerator</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/7sY3cvgsA9mzcrh7gR1ck0Q" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal40')">
-      <h2>VaultMesh IP Vault Elite</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/8x23cv9080Q3bndcBb1ck0P" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal41')">
-      <h2>RMF ZeroTrust Bundle</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/fZu8wP2BKgP1aj96cN1ck0O" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal42')">
-      <h2>Tactical Ping Alert Engine</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/00wdR96S042faj9bx71ck0N" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal43')">
-      <h2>SecureCloud FedGov LaunchPack</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/aFa28r908eGT0Iz44F1ck0M" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal44')">
-      <h2>FedRamp TurboTrack AI</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/00w14ncckfKXdvl0St1ck0L" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal45')">
-      <h2>Clearance Resume Generator</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/bJe4gzeksbuH62TfNn1ck0K" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal46')">
-      <h2>AI Job Submission Engine</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/fZu14n0tCeGT1MD6cN1ck0J" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal47')">
-      <h2>CMMC Sentinel Watchtower</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/aFacN5a4c2YbbndgRr1ck0I" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal48')">
-      <h2>RMF Compliance Commander</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/14AaEXgsA6an76X6cN1ck0H" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal49')">
-      <h2>eMASS AuthoritySync</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/eVq28rcck7er76X30B1ck0G" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal50')">
-      <h2>BlueTeam SOC Overwatch</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/3cI9ATcck7erbnd44F1ck0F" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal51')">
-      <h2>RedCell PenTest AI Ops</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/3cIbJ15NWdCP76X8kV1ck0E" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal52')">
-      <h2>HealthSec Compliance Core</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/28E7sL4JSeGTezp8kV1ck0D" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal53')">
-      <h2>Zero Trust Security Audit</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/eVq8wPa4caqD3ULat31ck0C" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal54')">
-      <h2>VaultMesh Patent Draft Pack</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/14A5kDb8g9mz8b17gR1ck0B" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal55')">
-      <h2>VaultMesh IP Lock</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/7sY6oH2BKaqDdvlbx71ck0A" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal56')">
-      <h2>CyberForce+ AI ThreatShield</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/bJe3cvgsA2Yb1MD58J1ck0z" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal57')">
-      <h2>Empire Access License</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/bJeeVdb8g2YbgHx9oZ1ck0y" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal58')">
-      <h2>ResumeCore Elite Kit</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/7sY28r1xGbuH4YPbx71ck0x" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal59')">
-      <h2>Proposal Builder Plan</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/00w7sLdgocyLezp9oZ1ck0w" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal60')">
-      <h2>Genova Smart Policy Kit</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/fZu7sL2BK56j4YP30B1ck0v" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal61')">
-      <h2>Partner Grid License Tier 1</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/aFafZheks0Q3gHxfNn1ck0u" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal62')">
-      <h2>CivIntel Insight Bundle</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/00weVdb8g6anaj9bx71ck0t" target="_blank">Buy Now</a>
-    </div>
-    
-    <div class="tile" onclick="openModal('modal63')">
-      <h2>VaultMesh 5x Draft Pack</h2>
-      <p>Status: <strong>ACTIVE</strong></p>
-      <a href="https://buy.stripe.com/5kQ6oH1xGbuHezpdFf1ck0s" target="_blank">Buy Now</a>
-    </div>
-    
-  </div>
+    <main class="main">
+        <section class="products-intro">
+            <h2>Our Products</h2>
+            <p>Explore our groundbreaking solutions engineered to dominate global cybersecurity and AI innovation markets.</p>
+        </section>
 
-  
-    <div id="modal01" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal01')">&times;</span>
-        <h2>EmpireLink CIC Relay Node</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_01.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
+        <div class="filter-bar">
+            <button class="filter-button" onclick="filterProducts('All')">All</button>
+            <button class="filter-button" onclick="filterProducts('AI-Defense')">AI Defense</button>
+<button class="filter-button" onclick="filterProducts('Quantum-Security')">Quantum Security</button>
+<button class="filter-button" onclick="filterProducts('Data-Integrity')">Data Integrity</button>
+<button class="filter-button" onclick="filterProducts('Compliance-Tools')">Compliance Tools</button>
+<button class="filter-button" onclick="filterProducts('Cyber-Operations')">Cyber Operations</button>
+        </div>
+
+        
+    <section class="product-category">
+        <h2>AI Defense</h2>
+        <div class="product-grid">
+            
+        <div class="product-card AI-Defense">
+            <span class="badge badge-AI-Defense">AI Defense</span>
+            <h3>EmpireLink CIC Relay Node</h3>
+            <p>Enable external command centers to relay data with CIC integration using token management. Includes relay node license, secure token gateway, and dashboard mirroring package.</p>
+            <button onclick="openModal('modal_AIDefense_0')">View Brief</button>
+            <a href="https://buy.stripe.com/7sY4gzgsAfKXdvlgRr1ck1s" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card AI-Defense">
+            <span class="badge badge-AI-Defense">AI Defense</span>
+            <h3>AgriDyn PrecisionRisk AI</h3>
+            <p>Weather, soil, and crop threat modeling using AI fusion models</p>
+            <button onclick="openModal('modal_AIDefense_1')">View Brief</button>
+            <a href="https://buy.stripe.com/8x2bJ15NWfKXcrh0St1ck1n" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card AI-Defense">
+            <span class="badge badge-AI-Defense">AI Defense</span>
+            <h3>OrbitalSec Telemetry ThreatLink</h3>
+            <p>Detects anomalies in real-time telemetry feeds from satellites & drones</p>
+            <button onclick="openModal('modal_AIDefense_2')">View Brief</button>
+            <a href="https://buy.stripe.com/dRm3cv5NW6an9f59oZ1ck1i" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card AI-Defense">
+            <span class="badge badge-AI-Defense">AI Defense</span>
+            <h3>AgriDyn IoT Mesh Sentinel</h3>
+            <p>Protects connected sensors, irrigation, and machinery in smart farms</p>
+            <button onclick="openModal('modal_AIDefense_3')">View Brief</button>
+            <a href="https://buy.stripe.com/dRm9AT6S07er2QHfNn1ck1d" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card AI-Defense">
+            <span class="badge badge-AI-Defense">AI Defense</span>
+            <h3>OrbitalSec SpaceOps Command Suite</h3>
+            <p>Tactical AI command system for satellite and space asset coordination</p>
+            <button onclick="openModal('modal_AIDefense_4')">View Brief</button>
+            <a href="https://buy.stripe.com/5kQ9ATa4c6an0Iz1Wx1ck18" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card AI-Defense">
+            <span class="badge badge-AI-Defense">AI Defense</span>
+            <h3>AgriDyn FieldShield Suite</h3>
+            <p>AI defense for smart agriculture & IoT farm assets</p>
+            <button onclick="openModal('modal_AIDefense_5')">View Brief</button>
+            <a href="https://buy.stripe.com/14AaEXb8ggP1crh44F1ck13" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card AI-Defense">
+            <span class="badge badge-AI-Defense">AI Defense</span>
+            <h3>OrbitalSec Satellite Shield</h3>
+            <p>AI-powered defense and anomaly monitoring for satellite systems</p>
+            <button onclick="openModal('modal_AIDefense_6')">View Brief</button>
+            <a href="https://buy.stripe.com/8x2bJ1b8gfKX76X30B1ck0Y" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card AI-Defense">
+            <span class="badge badge-AI-Defense">AI Defense</span>
+            <h3>Cloud Risk Recon Report</h3>
+            <p>AI scan & assess vulnerabilities across public cloud assets</p>
+            <button onclick="openModal('modal_AIDefense_7')">View Brief</button>
+            <a href="https://buy.stripe.com/8x228r7W4fKXbnd7gR1ck0T" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card AI-Defense">
+            <span class="badge badge-AI-Defense">AI Defense</span>
+            <h3>RMF ZeroTrust Bundle</h3>
+            <p>Unified RMF + Zero Trust compliance automation suite</p>
+            <button onclick="openModal('modal_AIDefense_8')">View Brief</button>
+            <a href="https://buy.stripe.com/fZu8wP2BKgP1aj96cN1ck0O" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card AI-Defense">
+            <span class="badge badge-AI-Defense">AI Defense</span>
+            <h3>AI Job Submission Engine</h3>
+            <p>Auto-apply to high-clearance cybersecurity jobs</p>
+            <button onclick="openModal('modal_AIDefense_9')">View Brief</button>
+            <a href="https://buy.stripe.com/fZu14n0tCeGT1MD6cN1ck0J" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card AI-Defense">
+            <span class="badge badge-AI-Defense">AI Defense</span>
+            <h3>RedCell PenTest AI Ops</h3>
+            <p>Automated penetration testing and threat simulation toolkit</p>
+            <button onclick="openModal('modal_AIDefense_10')">View Brief</button>
+            <a href="https://buy.stripe.com/3cIbJ15NWdCP76X8kV1ck0E" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card AI-Defense">
+            <span class="badge badge-AI-Defense">AI Defense</span>
+            <h3>CyberForce+ AI ThreatShield</h3>
+            <p>Real-time AI-driven cyber threat detection and autonomous defense response suite. Designed for military-grade network protection.</p>
+            <button onclick="openModal('modal_AIDefense_11')">View Brief</button>
+            <a href="https://buy.stripe.com/bJe3cvgsA2Yb1MD58J1ck0z" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card AI-Defense">
+            <span class="badge badge-AI-Defense">AI Defense</span>
+            <h3>Partner Grid License Tier 1</h3>
+            <p>Unlock foundational collaboration licensing for joint projects. Enhance partner ecosystem with tools for agreements, training, and growth.</p>
+            <button onclick="openModal('modal_AIDefense_12')">View Brief</button>
+            <a href="https://buy.stripe.com/aFafZheks0Q3gHxfNn1ck0u" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card AI-Defense">
+            <span class="badge badge-AI-Defense">AI Defense</span>
+            <h3>Press Kit SDponsorship</h3>
+            <p>A cutting-edge cybersecurity solution.</p>
+            <button onclick="openModal('modal_AIDefense_13')">View Brief</button>
+            <a href="https://buy.stripe.com/14A7sL6S0eGT1MDfNn1ck0o" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card AI-Defense">
+            <span class="badge badge-AI-Defense">AI Defense</span>
+            <h3>CivIntel Insight Bundle</h3>
+            <p>A cutting-edge cybersecurity solution.</p>
+            <button onclick="openModal('modal_AIDefense_14')">View Brief</button>
+            <a href="https://buy.stripe.com/bJe9AT4JScyL2QH8kV1ck08" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card AI-Defense">
+            <span class="badge badge-AI-Defense">AI Defense</span>
+            <h3>PartnerGrid License Tier 1</h3>
+            <p>A cutting-edge cybersecurity solution.</p>
+            <button onclick="openModal('modal_AIDefense_15')">View Brief</button>
+            <a href="https://buy.stripe.com/aFa5kDgsA1U79f5fNn1ck01" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        </div>
+    </section>
     
-    <div id="modal02" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal02')">&times;</span>
-        <h2>BioForge GenSecure AI Core</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_02.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
+    <section class="product-category">
+        <h2>Quantum Security</h2>
+        <div class="product-grid">
+            
+        <div class="product-card Quantum-Security">
+            <span class="badge badge-Quantum-Security">Quantum Security</span>
+            <h3>BioForge GenSecure AI Core</h3>
+            <p>Autonomous AI governance engine for biotech data and system security</p>
+            <button onclick="openModal('modal_QuantumSecurity_0')">View Brief</button>
+            <a href="https://buy.stripe.com/7sYfZhdgo1U7bnd7gR1ck1r" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Quantum-Security">
+            <span class="badge badge-Quantum-Security">Quantum Security</span>
+            <h3>Dynasec Partner Launch Kit</h3>
+            <p>Full partner onboarding pack with CIC access, product tiles, and Stripe mapping</p>
+            <button onclick="openModal('modal_QuantumSecurity_1')">View Brief</button>
+            <a href="https://buy.stripe.com/3cIeVda4c42fcrh1Wx1ck1m" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Quantum-Security">
+            <span class="badge badge-Quantum-Security">Quantum Security</span>
+            <h3>BioForge Pathogen Risk Core</h3>
+            <p>Cyber-physical threat intel suite for biotech and public health assets</p>
+            <button onclick="openModal('modal_QuantumSecurity_2')">View Brief</button>
+            <a href="https://buy.stripe.com/eVqcN5b8g7er62TcBb1ck1h" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Quantum-Security">
+            <span class="badge badge-Quantum-Security">Quantum Security</span>
+            <h3>Dynasec Partner Access License (Full Stack)</h3>
+            <p>Grants external partners complete CIC + Stripe product access with API keys</p>
+            <button onclick="openModal('modal_QuantumSecurity_3')">View Brief</button>
+            <a href="https://buy.stripe.com/8x27sLcckcyL62T6cN1ck1c" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Quantum-Security">
+            <span class="badge badge-Quantum-Security">Quantum Security</span>
+            <h3>BioForge ThreatDNA Suite</h3>
+            <p>Secures genomic data pipelines against cyberbiological threats</p>
+            <button onclick="openModal('modal_QuantumSecurity_4')">View Brief</button>
+            <a href="https://buy.stripe.com/9B64gz3FO7erbndfNn1ck17" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Quantum-Security">
+            <span class="badge badge-Quantum-Security">Quantum Security</span>
+            <h3>Dynasec AI BrandForge™</h3>
+            <p>Full AI-powered branding package for startups and partners</p>
+            <button onclick="openModal('modal_QuantumSecurity_5')">View Brief</button>
+            <a href="https://buy.stripe.com/fZu9AT90856jdvlgRr1ck12" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Quantum-Security">
+            <span class="badge badge-Quantum-Security">Quantum Security</span>
+            <h3>CyberForce+ Partner Access License</h3>
+            <p>Enables partners to white-label Dynasec solutions via API</p>
+            <button onclick="openModal('modal_QuantumSecurity_6')">View Brief</button>
+            <a href="https://buy.stripe.com/28EeVd1xGeGT2QH44F1ck0X" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Quantum-Security">
+            <span class="badge badge-Quantum-Security">Quantum Security</span>
+            <h3>CommandSim™ Cyber War Lab</h3>
+            <p>Real-world training sim for Red/Blue/Purple team drills</p>
+            <button onclick="openModal('modal_QuantumSecurity_7')">View Brief</button>
+            <a href="https://buy.stripe.com/fZu3cv0tCgP1fDt8kV1ck0S" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Quantum-Security">
+            <span class="badge badge-Quantum-Security">Quantum Security</span>
+            <h3>Tactical Ping Alert Engine</h3>
+            <p>Real-time CIC alerts for system events and job status updates</p>
+            <button onclick="openModal('modal_QuantumSecurity_8')">View Brief</button>
+            <a href="https://buy.stripe.com/00wdR96S042faj9bx71ck0N" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Quantum-Security">
+            <span class="badge badge-Quantum-Security">Quantum Security</span>
+            <h3>CMMC Sentinel Watchtower</h3>
+            <p>CMMC 2.0 readiness suite with real-time gap analysis</p>
+            <button onclick="openModal('modal_QuantumSecurity_9')">View Brief</button>
+            <a href="https://buy.stripe.com/aFacN5a4c2YbbndgRr1ck0I" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Quantum-Security">
+            <span class="badge badge-Quantum-Security">Quantum Security</span>
+            <h3>HealthSec Compliance Core</h3>
+            <p>HIPAA, HITECH, and CMMC compliance bundle with AI-powered risk detection, PHI monitors, and policy tracker automation.</p>
+            <button onclick="openModal('modal_QuantumSecurity_10')">View Brief</button>
+            <a href="https://buy.stripe.com/28E7sL4JSeGTezp8kV1ck0D" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Quantum-Security">
+            <span class="badge badge-Quantum-Security">Quantum Security</span>
+            <h3>Empire Access License</h3>
+            <p>All-in-one platform access to Dynasec AI Solutions’ suite of leadership tools, AI systems for premium users, and elite growth resources.</p>
+            <button onclick="openModal('modal_QuantumSecurity_11')">View Brief</button>
+            <a href="https://buy.stripe.com/fZu4gz1xGgP1crhgRr1ck04" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Quantum-Security">
+            <span class="badge badge-Quantum-Security">Quantum Security</span>
+            <h3>CivIntel Insight Bundle</h3>
+            <p>Access critical data sources for geopolitical analysis and risk management. Uncover key patterns and trends with advanced AI modeling.</p>
+            <button onclick="openModal('modal_QuantumSecurity_12')">View Brief</button>
+            <a href="https://buy.stripe.com/bJe9AT4JScyL2QH8kV1ck08" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Quantum-Security">
+            <span class="badge badge-Quantum-Security">Quantum Security</span>
+            <h3>Partner License Access</h3>
+            <p>A cutting-edge cybersecurity solution.</p>
+            <button onclick="openModal('modal_QuantumSecurity_13')">View Brief</button>
+            <a href="https://buy.stripe.com/7sYfZh5NWbuHaj9gRr1ck0m" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Quantum-Security">
+            <span class="badge badge-Quantum-Security">Quantum Security</span>
+            <h3>Genova Smart Policy Kit</h3>
+            <p>A cutting-edge cybersecurity solution.</p>
+            <button onclick="openModal('modal_QuantumSecurity_14')">View Brief</button>
+            <a href="https://buy.stripe.com/bJe5kD7W442f8b18kV1ck07" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Quantum-Security">
+            <span class="badge badge-Quantum-Security">Quantum Security</span>
+            <h3>VaultMesh Patent Draft Pack</h3>
+            <p>A cutting-edge cybersecurity solution.</p>
+            <button onclick="openModal('modal_QuantumSecurity_15')">View Brief</button>
+            <a href="https://buy.stripe.com/3cI8wPb8g6an8b1eJj1ck03" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        </div>
+    </section>
     
-    <div id="modal03" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal03')">&times;</span>
-        <h2>EduVerse Student ID SecurePass</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_03.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
+    <section class="product-category">
+        <h2>Data Integrity</h2>
+        <div class="product-grid">
+            
+        <div class="product-card Data-Integrity">
+            <span class="badge badge-Data-Integrity">Data Integrity</span>
+            <h3>EduVerse Student ID SecurePass</h3>
+            <p>Manages, authenticates, and encrypts student digital identity systems</p>
+            <button onclick="openModal('modal_DataIntegrity_0')">View Brief</button>
+            <a href="https://buy.stripe.com/14A5kDekscyL2QH8kV1ck1q" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Data-Integrity">
+            <span class="badge badge-Data-Integrity">Data Integrity</span>
+            <h3>VaultMesh Patent Syndication Hub</h3>
+            <p>AI-managed marketplace for global IP syndication and licensing</p>
+            <button onclick="openModal('modal_DataIntegrity_1')">View Brief</button>
+            <a href="https://buy.stripe.com/3cI7sLeksdCP2QHdFf1ck1l" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Data-Integrity">
+            <span class="badge badge-Data-Integrity">Data Integrity</span>
+            <h3>EduVerse FacultySec Pro</h3>
+            <p>Academic staff cybersecurity & digital identity enforcement</p>
+            <button onclick="openModal('modal_DataIntegrity_2')">View Brief</button>
+            <a href="https://buy.stripe.com/bJe14ndgo6anbnd6cN1ck1g" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Data-Integrity">
+            <span class="badge badge-Data-Integrity">Data Integrity</span>
+            <h3>VaultMind IP Licensing Kit</h3>
+            <p>Auto-generates license agreements for patent-backed tech</p>
+            <button onclick="openModal('modal_DataIntegrity_3')">View Brief</button>
+            <a href="https://buy.stripe.com/aFa28r9086an8b18kV1ck1b" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Data-Integrity">
+            <span class="badge badge-Data-Integrity">Data Integrity</span>
+            <h3>EduVerse CampusLock</h3>
+            <p>Academic cybersecurity suite for K–12 and universities</p>
+            <button onclick="openModal('modal_DataIntegrity_4')">View Brief</button>
+            <a href="https://buy.stripe.com/aFa7sL9087erbndcBb1ck16" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Data-Integrity">
+            <span class="badge badge-Data-Integrity">Data Integrity</span>
+            <h3>VaultMind Patent Generator</h3>
+            <p>AI-assisted patent creation tool with IP protection tracking</p>
+            <button onclick="openModal('modal_DataIntegrity_5')">View Brief</button>
+            <a href="https://buy.stripe.com/bJe9ATa4c2Yb1MDcBb1ck11" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Data-Integrity">
+            <span class="badge badge-Data-Integrity">Data Integrity</span>
+            <h3>CIC Application Tracker Pro</h3>
+            <p>Live application tracking engine w/ ATS sync</p>
+            <button onclick="openModal('modal_DataIntegrity_6')">View Brief</button>
+            <a href="https://buy.stripe.com/14A6oHeks42faj9cBb1ck0W" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Data-Integrity">
+            <span class="badge badge-Data-Integrity">Data Integrity</span>
+            <h3>CyberNexus Incident Core</h3>
+            <p>AI-powered IR (Incident Response) toolkit</p>
+            <button onclick="openModal('modal_DataIntegrity_7')">View Brief</button>
+            <a href="https://buy.stripe.com/4gMcN51xG9mz2QH8kV1ck0R" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Data-Integrity">
+            <span class="badge badge-Data-Integrity">Data Integrity</span>
+            <h3>SecureCloud FedGov LaunchPack</h3>
+            <p>Federal cloud compliance & onboarding bundle</p>
+            <button onclick="openModal('modal_DataIntegrity_8')">View Brief</button>
+            <a href="https://buy.stripe.com/aFa28r908eGT0Iz44F1ck0M" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Data-Integrity">
+            <span class="badge badge-Data-Integrity">Data Integrity</span>
+            <h3>RMF Compliance Commander™</h3>
+            <p>Complete RMF artifact suite for federal compliance</p>
+            <button onclick="openModal('modal_DataIntegrity_9')">View Brief</button>
+            <a href="https://buy.stripe.com/14AaEXgsA6an76X6cN1ck0H" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Data-Integrity">
+            <span class="badge badge-Data-Integrity">Data Integrity</span>
+            <h3>Zero Trust Security Audit</h3>
+            <p>Comprehensive audit package using zero-trust methodology and NIST 800-53 AI alignment for DoD or contractor environments.</p>
+            <button onclick="openModal('modal_DataIntegrity_10')">View Brief</button>
+            <a href="https://buy.stripe.com/eVq8wPa4caqD3ULat31ck0C" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Data-Integrity">
+            <span class="badge badge-Data-Integrity">Data Integrity</span>
+            <h3>ResumeCore Elite Kit</h3>
+            <p>Build compelling resumes with intelligent layouts, skills targeting, and experience enhancement. Secure job interviews and position advancement.</p>
+            <button onclick="openModal('modal_DataIntegrity_11')">View Brief</button>
+            <a href="https://buy.stripe.com/aFafZh908dCPfDteJj1ck02" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Data-Integrity">
+            <span class="badge badge-Data-Integrity">Data Integrity</span>
+            <h3>VaultMesh 5x Draft Pack</h3>
+            <p>Secure up to five patent ideas with our robust drafting and CIC Vault recordkeeping solution. Perfect for inventors and startup teams.</p>
+            <button onclick="openModal('modal_DataIntegrity_12')">View Brief</button>
+            <a href="https://buy.stripe.com/cNi8wP2BK8iv8b144F1ck06" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Data-Integrity">
+            <span class="badge badge-Data-Integrity">Data Integrity</span>
+            <h3>Empire Builder Kit</h3>
+            <p>A cutting-edge cybersecurity solution.</p>
+            <button onclick="openModal('modal_DataIntegrity_13')">View Brief</button>
+            <a href="https://buy.stripe.com/8x27sLeks1U7gHx0St1ck0l" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Data-Integrity">
+            <span class="badge badge-Data-Integrity">Data Integrity</span>
+            <h3>VaultMesh 5x Draft Pack</h3>
+            <p>A cutting-edge cybersecurity solution.</p>
+            <button onclick="openModal('modal_DataIntegrity_14')">View Brief</button>
+            <a href="https://buy.stripe.com/cNi8wP2BK8iv8b144F1ck06" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Data-Integrity">
+            <span class="badge badge-Data-Integrity">Data Integrity</span>
+            <h3>ResumeCore Elite Kit</h3>
+            <p>A cutting-edge cybersecurity solution.</p>
+            <button onclick="openModal('modal_DataIntegrity_15')">View Brief</button>
+            <a href="https://buy.stripe.com/aFafZh908dCPfDteJj1ck02" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        </div>
+    </section>
     
-    <div id="modal04" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal04')">&times;</span>
-        <h2>CivIntel Clearance Monitor</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_04.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
+    <section class="product-category">
+        <h2>Compliance Tools</h2>
+        <div class="product-grid">
+            
+        <div class="product-card Compliance-Tools">
+            <span class="badge badge-Compliance-Tools">Compliance Tools</span>
+            <h3>CivIntel Clearance Monitor</h3>
+            <p>Tracks clearance status changes across personnel databases in real-time</p>
+            <button onclick="openModal('modal_ComplianceTools_0')">View Brief</button>
+            <a href="https://buy.stripe.com/7sY9AT90842ffDtat31ck1p" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Compliance-Tools">
+            <span class="badge badge-Compliance-Tools">Compliance Tools</span>
+            <h3>RetailIntel VisualShield™</h3>
+            <p>Monitors in-store surveillance feeds for visual anomaly detection</p>
+            <button onclick="openModal('modal_ComplianceTools_1')">View Brief</button>
+            <a href="https://buy.stripe.com/14AcN53FOfKXdvl6cN1ck1k" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Compliance-Tools">
+            <span class="badge badge-Compliance-Tools">Compliance Tools</span>
+            <h3>CivIntel AI Surveillance Grid</h3>
+            <p>AI-integrated surveillance and open-source intel aggregation</p>
+            <button onclick="openModal('modal_ComplianceTools_2')">View Brief</button>
+            <a href="https://buy.stripe.com/9B6aEX2BKdCPbnd7gR1ck1f" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Compliance-Tools">
+            <span class="badge badge-Compliance-Tools">Compliance Tools</span>
+            <h3>RetailIntel SignalLock™</h3>
+            <p>Secure and audit Wi-Fi, POS, and sensor-based retail networks</p>
+            <button onclick="openModal('modal_ComplianceTools_3')">View Brief</button>
+            <a href="https://buy.stripe.com/aFa7sL6S01U7gHx1Wx1ck1a" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Compliance-Tools">
+            <span class="badge badge-Compliance-Tools">Compliance Tools</span>
+            <h3>CivIntel Recon Report Engine</h3>
+            <p>Aggregates open-source intelligence into actionable insights</p>
+            <button onclick="openModal('modal_ComplianceTools_4')">View Brief</button>
+            <a href="https://buy.stripe.com/3cIaEX0tC2Yb3ULdFf1ck15" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Compliance-Tools">
+            <span class="badge badge-Compliance-Tools">Compliance Tools</span>
+            <h3>RetailIntel Threat Auditor</h3>
+            <p>Monitor, log, and defend retail POS and inventory systems</p>
+            <button onclick="openModal('modal_ComplianceTools_5')">View Brief</button>
+            <a href="https://buy.stripe.com/eVq4gz7W456jbndbx71ck10" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Compliance-Tools">
+            <span class="badge badge-Compliance-Tools">Compliance Tools</span>
+            <h3>AI Contract Proposal Writer (Gov/Fed)</h3>
+            <p>Auto-generates DoD/Fed proposal drafts</p>
+            <button onclick="openModal('modal_ComplianceTools_6')">View Brief</button>
+            <a href="https://buy.stripe.com/cNiaEXb8gfKX1MD8kV1ck0V" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Compliance-Tools">
+            <span class="badge badge-Compliance-Tools">Compliance Tools</span>
+            <h3>AI Clearance Accelerator</h3>
+            <p>Tools to boost, validate, and package security clearance readiness</p>
+            <button onclick="openModal('modal_ComplianceTools_7')">View Brief</button>
+            <a href="https://buy.stripe.com/7sY3cvgsA9mzcrh7gR1ck0Q" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Compliance-Tools">
+            <span class="badge badge-Compliance-Tools">Compliance Tools</span>
+            <h3>FedRamp TurboTrack AI</h3>
+            <p>Fast-track FedRAMP authorization & automation kit</p>
+            <button onclick="openModal('modal_ComplianceTools_8')">View Brief</button>
+            <a href="https://buy.stripe.com/00w14ncckfKXdvl0St1ck0L" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Compliance-Tools">
+            <span class="badge badge-Compliance-Tools">Compliance Tools</span>
+            <h3>eMASS AuthoritySync™</h3>
+            <p>Auto-sync security controls and POA&Ms with DoD eMASS</p>
+            <button onclick="openModal('modal_ComplianceTools_9')">View Brief</button>
+            <a href="https://buy.stripe.com/eVq28rcck7er76X30B1ck0G" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Compliance-Tools">
+            <span class="badge badge-Compliance-Tools">Compliance Tools</span>
+            <h3>VaultMesh Patent Draft Pack</h3>
+            <p>Create and store detailed patent drafts with CIC-verifiable VaultMesh integrity, ready for filing or legal partnership submission.</p>
+            <button onclick="openModal('modal_ComplianceTools_10')">View Brief</button>
+            <a href="https://buy.stripe.com/3cI8wPb8g6an8b1eJj1ck03" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Compliance-Tools">
+            <span class="badge badge-Compliance-Tools">Compliance Tools</span>
+            <h3>Proposal Builder Plan</h3>
+            <p>Generate polished proposals with AI-powered tools for formatting, layouts, and content suggestions. Impress stakeholders with data-driven precision.</p>
+            <button onclick="openModal('modal_ComplianceTools_11')">View Brief</button>
+            <a href="https://buy.stripe.com/00w7sLdgocyLezp9oZ1ck0w" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Compliance-Tools">
+            <span class="badge badge-Compliance-Tools">Compliance Tools</span>
+            <h3>Affiliate Kit</h3>
+            <p>A cutting-edge cybersecurity solution.</p>
+            <button onclick="openModal('modal_ComplianceTools_12')">View Brief</button>
+            <a href="https://buy.stripe.com/6oU8wP90842f9f5dFf1ck0q" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Compliance-Tools">
+            <span class="badge badge-Compliance-Tools">Compliance Tools</span>
+            <h3>LegalOps NDA Toolkit</h3>
+            <p>A cutting-edge cybersecurity solution.</p>
+            <button onclick="openModal('modal_ComplianceTools_13')">View Brief</button>
+            <a href="https://buy.stripe.com/4gM9ATeks1U71MDcBb1ck0a" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Compliance-Tools">
+            <span class="badge badge-Compliance-Tools">Compliance Tools</span>
+            <h3>Startup Launch Arsenal</h3>
+            <p>A cutting-edge cybersecurity solution.</p>
+            <button onclick="openModal('modal_ComplianceTools_14')">View Brief</button>
+            <a href="https://buy.stripe.com/3cIfZh3FO42ffDt7gR1ck05" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Compliance-Tools">
+            <span class="badge badge-Compliance-Tools">Compliance Tools</span>
+            <h3>Dynasec Test Transaction</h3>
+            <p>A cutting-edge cybersecurity solution.</p>
+            <button onclick="openModal('modal_ComplianceTools_15')">View Brief</button>
+            <a href="https://buy.stripe.com/cNieVddgo6an8b1at31ck00" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        </div>
+    </section>
     
-    <div id="modal05" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal05')">&times;</span>
-        <h2>FinShield API VaultGate</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_05.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal06" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal06')">&times;</span>
-        <h2>AgriDyn PrecisionRisk AI</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_06.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal07" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal07')">&times;</span>
-        <h2>Dynasec Partner Launch Kit</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_07.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal08" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal08')">&times;</span>
-        <h2>VaultMesh Patent Syndication Hub</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_08.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal09" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal09')">&times;</span>
-        <h2>RetailIntel VisualShield</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_09.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal10" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal10')">&times;</span>
-        <h2>HealthSec PHI Fortress</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_10.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal11" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal11')">&times;</span>
-        <h2>OrbitalSec Telemetry ThreatLink</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_11.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal12" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal12')">&times;</span>
-        <h2>BioForge Pathogen Risk Core</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_12.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal13" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal13')">&times;</span>
-        <h2>EduVerse FacultySec Pro</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_13.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal14" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal14')">&times;</span>
-        <h2>CivIntel AI Surveillance Grid</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_14.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal15" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal15')">&times;</span>
-        <h2>FinShield Real-Time Audit Core</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_15.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal16" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal16')">&times;</span>
-        <h2>AgriDyn IoT Mesh Sentinel</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_16.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal17" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal17')">&times;</span>
-        <h2>Dynasec Partner Access License (Full Stack)</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_17.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal18" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal18')">&times;</span>
-        <h2>VaultMind IP Licensing Kit</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_18.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal19" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal19')">&times;</span>
-        <h2>RetailIntel SignalLock</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_19.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal20" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal20')">&times;</span>
-        <h2>HealthSec ZeroLeak Scan Engine</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_20.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal21" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal21')">&times;</span>
-        <h2>OrbitalSec SpaceOps Command Suite</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_21.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal22" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal22')">&times;</span>
-        <h2>BioForge ThreatDNA Suite</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_22.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal23" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal23')">&times;</span>
-        <h2>EduVerse CampusLock</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_23.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal24" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal24')">&times;</span>
-        <h2>CivIntel Recon Report Engine</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_24.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal25" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal25')">&times;</span>
-        <h2>FinShield FraudNet AI</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_25.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal26" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal26')">&times;</span>
-        <h2>AgriDyn FieldShield Suite</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_26.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal27" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal27')">&times;</span>
-        <h2>Dynasec AI BrandForge</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_27.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal28" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal28')">&times;</span>
-        <h2>VaultMind Patent Generator</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_28.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal29" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal29')">&times;</span>
-        <h2>RetailIntel Threat Auditor</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_29.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal30" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal30')">&times;</span>
-        <h2>HealthSec AI Compliance Core</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_30.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal31" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal31')">&times;</span>
-        <h2>OrbitalSec Satellite Shield</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_31.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal32" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal32')">&times;</span>
-        <h2>CyberForce+ Partner Access License</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_32.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal33" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal33')">&times;</span>
-        <h2>CIC Application Tracker Pro</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_33.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal34" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal34')">&times;</span>
-        <h2>AI Contract Proposal Writer (Gov/Fed)</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_34.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal35" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal35')">&times;</span>
-        <h2>ZeroDay Exploit Risk Shield</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_35.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal36" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal36')">&times;</span>
-        <h2>Cloud Risk Recon Report</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_36.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal37" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal37')">&times;</span>
-        <h2>CommandSim Cyber War Lab</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_37.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal38" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal38')">&times;</span>
-        <h2>CyberNexus Incident Core</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_38.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal39" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal39')">&times;</span>
-        <h2>AI Clearance Accelerator</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_39.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal40" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal40')">&times;</span>
-        <h2>VaultMesh IP Vault Elite</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_40.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal41" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal41')">&times;</span>
-        <h2>RMF ZeroTrust Bundle</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_41.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal42" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal42')">&times;</span>
-        <h2>Tactical Ping Alert Engine</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_42.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal43" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal43')">&times;</span>
-        <h2>SecureCloud FedGov LaunchPack</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_43.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal44" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal44')">&times;</span>
-        <h2>FedRamp TurboTrack AI</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_44.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal45" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal45')">&times;</span>
-        <h2>Clearance Resume Generator</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_45.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal46" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal46')">&times;</span>
-        <h2>AI Job Submission Engine</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_46.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal47" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal47')">&times;</span>
-        <h2>CMMC Sentinel Watchtower</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_47.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal48" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal48')">&times;</span>
-        <h2>RMF Compliance Commander</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_48.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal49" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal49')">&times;</span>
-        <h2>eMASS AuthoritySync</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_49.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal50" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal50')">&times;</span>
-        <h2>BlueTeam SOC Overwatch</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_50.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal51" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal51')">&times;</span>
-        <h2>RedCell PenTest AI Ops</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_51.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal52" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal52')">&times;</span>
-        <h2>HealthSec Compliance Core</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_52.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal53" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal53')">&times;</span>
-        <h2>Zero Trust Security Audit</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_53.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal54" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal54')">&times;</span>
-        <h2>VaultMesh Patent Draft Pack</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_54.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal55" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal55')">&times;</span>
-        <h2>VaultMesh IP Lock</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_55.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal56" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal56')">&times;</span>
-        <h2>CyberForce+ AI ThreatShield</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_56.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal57" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal57')">&times;</span>
-        <h2>Empire Access License</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_57.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal58" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal58')">&times;</span>
-        <h2>ResumeCore Elite Kit</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_58.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal59" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal59')">&times;</span>
-        <h2>Proposal Builder Plan</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_59.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal60" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal60')">&times;</span>
-        <h2>Genova Smart Policy Kit</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_60.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal61" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal61')">&times;</span>
-        <h2>Partner Grid License Tier 1</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_61.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal62" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal62')">&times;</span>
-        <h2>CivIntel Insight Bundle</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_62.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
-    
-    <div id="modal63" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal63')">&times;</span>
-        <h2>VaultMesh 5x Draft Pack</h2>
-        <p>Product description and technical specs are available in the download below.</p>
-        <a href="/pdfs/product_63.pdf" target="_blank" class="download-link">📄 Download Brief</a>
-      </div>
-    </div>
+    <section class="product-category">
+        <h2>Cyber Operations</h2>
+        <div class="product-grid">
+            
+        <div class="product-card Cyber-Operations">
+            <span class="badge badge-Cyber-Operations">Cyber Operations</span>
+            <h3>FinShield API VaultGate™</h3>
+            <p>Protects FinTech APIs and transaction endpoints from injection attacks</p>
+            <button onclick="openModal('modal_CyberOperations_0')">View Brief</button>
+            <a href="https://buy.stripe.com/8x2bJ1dgoaqDgHxfNn1ck1o" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Cyber-Operations">
+            <span class="badge badge-Cyber-Operations">Cyber Operations</span>
+            <h3>HealthSec PHI Fortress</h3>
+            <p>Secures electronic health records (EHR) with zero-trust perimeter logic</p>
+            <button onclick="openModal('modal_CyberOperations_1')">View Brief</button>
+            <a href="https://buy.stripe.com/5kQ4gz3FO1U71MD1Wx1ck1j" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Cyber-Operations">
+            <span class="badge badge-Cyber-Operations">Cyber Operations</span>
+            <h3>FinShield Real-Time Audit Core</h3>
+            <p>AI auditing suite for financial networks, SOC 2 & PCI-DSS prep</p>
+            <button onclick="openModal('modal_CyberOperations_2')">View Brief</button>
+            <a href="https://buy.stripe.com/00w8wPa4cfKX4YPcBb1ck1e" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Cyber-Operations">
+            <span class="badge badge-Cyber-Operations">Cyber Operations</span>
+            <h3>HealthSec ZeroLeak Scan Engine</h3>
+            <p>Detects PHI/PII exposure vectors in real-time across healthcare systems</p>
+            <button onclick="openModal('modal_CyberOperations_3')">View Brief</button>
+            <a href="https://buy.stripe.com/6oUaEX3FO8iv76X44F1ck19" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Cyber-Operations">
+            <span class="badge badge-Cyber-Operations">Cyber Operations</span>
+            <h3>FinShield FraudNet AI</h3>
+            <p>Real-time detection and response for financial threat surfaces</p>
+            <button onclick="openModal('modal_CyberOperations_4')">View Brief</button>
+            <a href="https://buy.stripe.com/6oUaEX908fKX3UL7gR1ck14" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Cyber-Operations">
+            <span class="badge badge-Cyber-Operations">Cyber Operations</span>
+            <h3>HealthSec AI Compliance Core</h3>
+            <p>HIPAA & HITRUST compliance accelerator with CIC visibility</p>
+            <button onclick="openModal('modal_CyberOperations_5')">View Brief</button>
+            <a href="https://buy.stripe.com/7sYcN57W442f76X7gR1ck0Z" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Cyber-Operations">
+            <span class="badge badge-Cyber-Operations">Cyber Operations</span>
+            <h3>ZeroDay Exploit Risk Shield</h3>
+            <p>Preemptive detection suite for zero-day exposure</p>
+            <button onclick="openModal('modal_CyberOperations_6')">View Brief</button>
+            <a href="https://buy.stripe.com/00w3cvgsAaqDdvlfNn1ck0U" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Cyber-Operations">
+            <span class="badge badge-Cyber-Operations">Cyber Operations</span>
+            <h3>VaultMesh IP Vault Elite</h3>
+            <p>High-security IP vault w/ smart access controls</p>
+            <button onclick="openModal('modal_CyberOperations_7')">View Brief</button>
+            <a href="https://buy.stripe.com/8x23cv9080Q3bndcBb1ck0P" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Cyber-Operations">
+            <span class="badge badge-Cyber-Operations">Cyber Operations</span>
+            <h3>Clearance Resume Generator</h3>
+            <p>TS/SCI-optimized resume and career toolkit</p>
+            <button onclick="openModal('modal_CyberOperations_8')">View Brief</button>
+            <a href="https://buy.stripe.com/bJe4gzeksbuH62TfNn1ck0K" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Cyber-Operations">
+            <span class="badge badge-Cyber-Operations">Cyber Operations</span>
+            <h3>BlueTeam SOC Overwatch</h3>
+            <p>24/7 AI-driven network defense and anomaly detection</p>
+            <button onclick="openModal('modal_CyberOperations_9')">View Brief</button>
+            <a href="https://buy.stripe.com/3cI9ATcck7erbnd44F1ck0F" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Cyber-Operations">
+            <span class="badge badge-Cyber-Operations">Cyber Operations</span>
+            <h3>VaultMesh IP Lock</h3>
+            <p>Tamper-proof, AI-secured IP registration and chain-of-custody documentation platform. Includes instant VaultMesh certification.</p>
+            <button onclick="openModal('modal_CyberOperations_10')">View Brief</button>
+            <a href="https://buy.stripe.com/7sY6oH2BKaqDdvlbx71ck0A" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Cyber-Operations">
+            <span class="badge badge-Cyber-Operations">Cyber Operations</span>
+            <h3>Genova Smart Policy Kit</h3>
+            <p>Design adaptive policies with AI-driven insights. Simplify governance compliance and strengthen your regulatory framework.</p>
+            <button onclick="openModal('modal_CyberOperations_11')">View Brief</button>
+            <a href="https://buy.stripe.com/bJe5kD7W442f8b18kV1ck07" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Cyber-Operations">
+            <span class="badge badge-Cyber-Operations">Cyber Operations</span>
+            <h3>Global Investment Tier</h3>
+            <p>A cutting-edge cybersecurity solution.</p>
+            <button onclick="openModal('modal_CyberOperations_12')">View Brief</button>
+            <a href="https://buy.stripe.com/9B67sLgsA0Q38b1fNn1ck0p" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Cyber-Operations">
+            <span class="badge badge-Cyber-Operations">Cyber Operations</span>
+            <h3>Proposal Builder Kit</h3>
+            <p>A cutting-edge cybersecurity solution.</p>
+            <button onclick="openModal('modal_CyberOperations_13')">View Brief</button>
+            <a href="https://buy.stripe.com/8x228r0tC8iv76X0St1ck09" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="product-card Cyber-Operations">
+            <span class="badge badge-Cyber-Operations">Cyber Operations</span>
+            <h3>Empire Access License</h3>
+            <p>A cutting-edge cybersecurity solution.</p>
+            <button onclick="openModal('modal_CyberOperations_14')">View Brief</button>
+            <a href="https://buy.stripe.com/fZu4gz1xGgP1crhgRr1ck04" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        
+        </div>
+    </section>
     
 
-  <script>
+        <section class="mission">
+            <h2>Dynasec’s Mission</h2>
+            <p>To revolutionize the way AI and cybersecurity empower civilizations. Our tools are engineered for impact —
+               fueling compliance, defense, innovation, and prosperity.</p>
+        </section>
+
+        
+        <div id="modal_AIDefense_0" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_AIDefense_0')">&times;</span>
+                <h2>EmpireLink CIC Relay Node - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> AI Defense</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> EmpireLink CIC Relay Node</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Enable external command centers to relay data with CIC integration using token management. Includes relay node license, secure token gateway, and dashboard mirroring package.</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/7sY4gzgsAfKXdvlgRr1ck1s" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_AIDefense_1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_AIDefense_1')">&times;</span>
+                <h2>AgriDyn PrecisionRisk AI - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> AI Defense</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> Press Kit SDponsorship</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> nan</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/14A7sL6S0eGT1MDfNn1ck0o" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_AIDefense_2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_AIDefense_2')">&times;</span>
+                <h2>OrbitalSec Telemetry ThreatLink - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> AI Defense</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> RedCell PenTest AI Ops</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Automated penetration testing and threat simulation toolkit</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/3cIbJ15NWdCP76X8kV1ck0E" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_AIDefense_3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_AIDefense_3')">&times;</span>
+                <h2>AgriDyn IoT Mesh Sentinel - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> AI Defense</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> Cloud Risk Recon Report</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> AI scan & assess vulnerabilities across public cloud assets</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/8x228r7W4fKXbnd7gR1ck0T" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_AIDefense_4" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_AIDefense_4')">&times;</span>
+                <h2>OrbitalSec SpaceOps Command Suite - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> AI Defense</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> OrbitalSec SpaceOps Command Suite</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Tactical AI command system for satellite and space asset coordination</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/5kQ9ATa4c6an0Iz1Wx1ck18" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_AIDefense_5" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_AIDefense_5')">&times;</span>
+                <h2>AgriDyn FieldShield Suite - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> AI Defense</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> AgriDyn PrecisionRisk AI</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Weather, soil, and crop threat modeling using AI fusion models</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/8x2bJ15NWfKXcrh0St1ck1n" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_AIDefense_6" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_AIDefense_6')">&times;</span>
+                <h2>OrbitalSec Satellite Shield - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> AI Defense</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> CivIntel Insight Bundle</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> nan</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/bJe9AT4JScyL2QH8kV1ck08" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_AIDefense_7" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_AIDefense_7')">&times;</span>
+                <h2>Cloud Risk Recon Report - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> AI Defense</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> CyberForce+ AI ThreatShield</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Real-time AI-driven cyber threat detection and autonomous defense response suite. Designed for military-grade network protection.</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/bJe3cvgsA2Yb1MD58J1ck0z" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_AIDefense_8" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_AIDefense_8')">&times;</span>
+                <h2>RMF ZeroTrust Bundle - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> AI Defense</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> RMF ZeroTrust Bundle</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Unified RMF + Zero Trust compliance automation suite</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/fZu8wP2BKgP1aj96cN1ck0O" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_AIDefense_9" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_AIDefense_9')">&times;</span>
+                <h2>AI Job Submission Engine - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> AI Defense</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> AgriDyn FieldShield Suite</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> AI defense for smart agriculture & IoT farm assets</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/14AaEXb8ggP1crh44F1ck13" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_AIDefense_10" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_AIDefense_10')">&times;</span>
+                <h2>RedCell PenTest AI Ops - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> AI Defense</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> OrbitalSec Telemetry ThreatLink</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Detects anomalies in real-time telemetry feeds from satellites & drones</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/dRm3cv5NW6an9f59oZ1ck1i" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_AIDefense_11" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_AIDefense_11')">&times;</span>
+                <h2>CyberForce+ AI ThreatShield - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> AI Defense</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> PartnerGrid License Tier 1</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> nan</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/aFa5kDgsA1U79f5fNn1ck01" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_AIDefense_12" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_AIDefense_12')">&times;</span>
+                <h2>Partner Grid License Tier 1 - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> AI Defense</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> Partner Grid License Tier 1</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Unlock foundational collaboration licensing for joint projects. Enhance partner ecosystem with tools for agreements, training, and growth.</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/aFafZheks0Q3gHxfNn1ck0u" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_AIDefense_13" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_AIDefense_13')">&times;</span>
+                <h2>Press Kit SDponsorship - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> AI Defense</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> AI Job Submission Engine</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Auto-apply to high-clearance cybersecurity jobs</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/fZu14n0tCeGT1MD6cN1ck0J" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_AIDefense_14" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_AIDefense_14')">&times;</span>
+                <h2>CivIntel Insight Bundle - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> AI Defense</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> OrbitalSec Satellite Shield</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> AI-powered defense and anomaly monitoring for satellite systems</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/8x2bJ1b8gfKX76X30B1ck0Y" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_AIDefense_15" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_AIDefense_15')">&times;</span>
+                <h2>PartnerGrid License Tier 1 - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> AI Defense</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> AgriDyn IoT Mesh Sentinel</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Protects connected sensors, irrigation, and machinery in smart farms</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/dRm9AT6S07er2QHfNn1ck1d" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_QuantumSecurity_0" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_QuantumSecurity_0')">&times;</span>
+                <h2>BioForge GenSecure AI Core - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Quantum Security</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> Dynasec Partner Access License (Full Stack)</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Grants external partners complete CIC + Stripe product access with API keys</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/8x27sLcckcyL62T6cN1ck1c" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_QuantumSecurity_1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_QuantumSecurity_1')">&times;</span>
+                <h2>Dynasec Partner Launch Kit - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Quantum Security</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> BioForge GenSecure AI Core</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Autonomous AI governance engine for biotech data and system security</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/7sYfZhdgo1U7bnd7gR1ck1r" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_QuantumSecurity_2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_QuantumSecurity_2')">&times;</span>
+                <h2>BioForge Pathogen Risk Core - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Quantum Security</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> Partner License Access</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> nan</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/7sYfZh5NWbuHaj9gRr1ck0m" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_QuantumSecurity_3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_QuantumSecurity_3')">&times;</span>
+                <h2>Dynasec Partner Access License (Full Stack) - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Quantum Security</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> HealthSec Compliance Core</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> HIPAA, HITECH, and CMMC compliance bundle with AI-powered risk detection, PHI monitors, and policy tracker automation.</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/28E7sL4JSeGTezp8kV1ck0D" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_QuantumSecurity_4" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_QuantumSecurity_4')">&times;</span>
+                <h2>BioForge ThreatDNA Suite - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Quantum Security</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> CommandSim™ Cyber War Lab</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Real-world training sim for Red/Blue/Purple team drills</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/fZu3cv0tCgP1fDt8kV1ck0S" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_QuantumSecurity_5" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_QuantumSecurity_5')">&times;</span>
+                <h2>Dynasec AI BrandForge™ - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Quantum Security</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> BioForge ThreatDNA Suite</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Secures genomic data pipelines against cyberbiological threats</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/9B64gz3FO7erbndfNn1ck17" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_QuantumSecurity_6" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_QuantumSecurity_6')">&times;</span>
+                <h2>CyberForce+ Partner Access License - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Quantum Security</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> Dynasec Partner Launch Kit</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Full partner onboarding pack with CIC access, product tiles, and Stripe mapping</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/3cIeVda4c42fcrh1Wx1ck1m" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_QuantumSecurity_7" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_QuantumSecurity_7')">&times;</span>
+                <h2>CommandSim™ Cyber War Lab - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Quantum Security</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> Genova Smart Policy Kit</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> nan</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/bJe5kD7W442f8b18kV1ck07" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_QuantumSecurity_8" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_QuantumSecurity_8')">&times;</span>
+                <h2>Tactical Ping Alert Engine - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Quantum Security</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> Empire Access License</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> All-in-one platform access to Dynasec AI Solutions’ suite of leadership tools, AI systems for premium users, and elite growth resources.</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/fZu4gz1xGgP1crhgRr1ck04" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_QuantumSecurity_9" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_QuantumSecurity_9')">&times;</span>
+                <h2>CMMC Sentinel Watchtower - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Quantum Security</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> Tactical Ping Alert Engine</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Real-time CIC alerts for system events and job status updates</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/00wdR96S042faj9bx71ck0N" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_QuantumSecurity_10" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_QuantumSecurity_10')">&times;</span>
+                <h2>HealthSec Compliance Core - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Quantum Security</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> Dynasec AI BrandForge™</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Full AI-powered branding package for startups and partners</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/fZu9AT90856jdvlgRr1ck12" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_QuantumSecurity_11" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_QuantumSecurity_11')">&times;</span>
+                <h2>Empire Access License - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Quantum Security</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> BioForge Pathogen Risk Core</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Cyber-physical threat intel suite for biotech and public health assets</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/eVqcN5b8g7er62TcBb1ck1h" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_QuantumSecurity_12" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_QuantumSecurity_12')">&times;</span>
+                <h2>CivIntel Insight Bundle - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Quantum Security</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> VaultMesh Patent Draft Pack</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> nan</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/3cI8wPb8g6an8b1eJj1ck03" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_QuantumSecurity_13" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_QuantumSecurity_13')">&times;</span>
+                <h2>Partner License Access - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Quantum Security</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> CivIntel Insight Bundle</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Access critical data sources for geopolitical analysis and risk management. Uncover key patterns and trends with advanced AI modeling.</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/bJe9AT4JScyL2QH8kV1ck08" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_QuantumSecurity_14" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_QuantumSecurity_14')">&times;</span>
+                <h2>Genova Smart Policy Kit - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Quantum Security</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> CMMC Sentinel Watchtower</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> CMMC 2.0 readiness suite with real-time gap analysis</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/aFacN5a4c2YbbndgRr1ck0I" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_QuantumSecurity_15" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_QuantumSecurity_15')">&times;</span>
+                <h2>VaultMesh Patent Draft Pack - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Quantum Security</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> CyberForce+ Partner Access License</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Enables partners to white-label Dynasec solutions via API</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/28EeVd1xGeGT2QH44F1ck0X" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_DataIntegrity_0" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_DataIntegrity_0')">&times;</span>
+                <h2>EduVerse Student ID SecurePass - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Data Integrity</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> CIC Application Tracker Pro</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Live application tracking engine w/ ATS sync</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/14A6oHeks42faj9cBb1ck0W" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_DataIntegrity_1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_DataIntegrity_1')">&times;</span>
+                <h2>VaultMesh Patent Syndication Hub - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Data Integrity</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> VaultMind IP Licensing Kit</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Auto-generates license agreements for patent-backed tech</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/aFa28r9086an8b18kV1ck1b" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_DataIntegrity_2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_DataIntegrity_2')">&times;</span>
+                <h2>EduVerse FacultySec Pro - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Data Integrity</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> EduVerse Student ID SecurePass</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Manages, authenticates, and encrypts student digital identity systems</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/14A5kDekscyL2QH8kV1ck1q" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_DataIntegrity_3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_DataIntegrity_3')">&times;</span>
+                <h2>VaultMind IP Licensing Kit - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Data Integrity</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> Empire Builder Kit</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> nan</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/8x27sLeks1U7gHx0St1ck0l" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_DataIntegrity_4" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_DataIntegrity_4')">&times;</span>
+                <h2>EduVerse CampusLock - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Data Integrity</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> Zero Trust Security Audit</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Comprehensive audit package using zero-trust methodology and NIST 800-53 AI alignment for DoD or contractor environments.</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/eVq8wPa4caqD3ULat31ck0C" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_DataIntegrity_5" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_DataIntegrity_5')">&times;</span>
+                <h2>VaultMind Patent Generator - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Data Integrity</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> CyberNexus Incident Core</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> AI-powered IR (Incident Response) toolkit</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/4gMcN51xG9mz2QH8kV1ck0R" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_DataIntegrity_6" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_DataIntegrity_6')">&times;</span>
+                <h2>CIC Application Tracker Pro - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Data Integrity</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> EduVerse CampusLock</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Academic cybersecurity suite for K–12 and universities</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/aFa7sL9087erbndcBb1ck16" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_DataIntegrity_7" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_DataIntegrity_7')">&times;</span>
+                <h2>CyberNexus Incident Core - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Data Integrity</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> VaultMesh Patent Syndication Hub</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> AI-managed marketplace for global IP syndication and licensing</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/3cI7sLeksdCP2QHdFf1ck1l" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_DataIntegrity_8" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_DataIntegrity_8')">&times;</span>
+                <h2>SecureCloud FedGov LaunchPack - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Data Integrity</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> VaultMesh 5x Draft Pack</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> nan</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/cNi8wP2BK8iv8b144F1ck06" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_DataIntegrity_9" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_DataIntegrity_9')">&times;</span>
+                <h2>RMF Compliance Commander™ - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Data Integrity</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> ResumeCore Elite Kit</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Build compelling resumes with intelligent layouts, skills targeting, and experience enhancement. Secure job interviews and position advancement.</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/aFafZh908dCPfDteJj1ck02" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_DataIntegrity_10" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_DataIntegrity_10')">&times;</span>
+                <h2>Zero Trust Security Audit - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Data Integrity</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> SecureCloud FedGov LaunchPack</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Federal cloud compliance & onboarding bundle</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/aFa28r908eGT0Iz44F1ck0M" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_DataIntegrity_11" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_DataIntegrity_11')">&times;</span>
+                <h2>ResumeCore Elite Kit - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Data Integrity</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> VaultMind Patent Generator</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> AI-assisted patent creation tool with IP protection tracking</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/bJe9ATa4c2Yb1MDcBb1ck11" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_DataIntegrity_12" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_DataIntegrity_12')">&times;</span>
+                <h2>VaultMesh 5x Draft Pack - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Data Integrity</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> EduVerse FacultySec Pro</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Academic staff cybersecurity & digital identity enforcement</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/bJe14ndgo6anbnd6cN1ck1g" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_DataIntegrity_13" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_DataIntegrity_13')">&times;</span>
+                <h2>Empire Builder Kit - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Data Integrity</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> ResumeCore Elite Kit</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> nan</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/aFafZh908dCPfDteJj1ck02" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_DataIntegrity_14" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_DataIntegrity_14')">&times;</span>
+                <h2>VaultMesh 5x Draft Pack - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Data Integrity</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> VaultMesh 5x Draft Pack</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Secure up to five patent ideas with our robust drafting and CIC Vault recordkeeping solution. Perfect for inventors and startup teams.</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/cNi8wP2BK8iv8b144F1ck06" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_DataIntegrity_15" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_DataIntegrity_15')">&times;</span>
+                <h2>ResumeCore Elite Kit - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Data Integrity</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> RMF Compliance Commander™</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Complete RMF artifact suite for federal compliance</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/14AaEXgsA6an76X6cN1ck0H" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_ComplianceTools_0" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_ComplianceTools_0')">&times;</span>
+                <h2>CivIntel Clearance Monitor - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Compliance Tools</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> eMASS AuthoritySync™</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Auto-sync security controls and POA&Ms with DoD eMASS</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/eVq28rcck7er76X30B1ck0G" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_ComplianceTools_1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_ComplianceTools_1')">&times;</span>
+                <h2>RetailIntel VisualShield™ - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Compliance Tools</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> AI Contract Proposal Writer (Gov/Fed)</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Auto-generates DoD/Fed proposal drafts</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/cNiaEXb8gfKX1MD8kV1ck0V" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_ComplianceTools_2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_ComplianceTools_2')">&times;</span>
+                <h2>CivIntel AI Surveillance Grid - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Compliance Tools</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> RetailIntel SignalLock™</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Secure and audit Wi-Fi, POS, and sensor-based retail networks</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/aFa7sL6S01U7gHx1Wx1ck1a" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_ComplianceTools_3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_ComplianceTools_3')">&times;</span>
+                <h2>RetailIntel SignalLock™ - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Compliance Tools</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> CivIntel Clearance Monitor</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Tracks clearance status changes across personnel databases in real-time</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/7sY9AT90842ffDtat31ck1p" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_ComplianceTools_4" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_ComplianceTools_4')">&times;</span>
+                <h2>CivIntel Recon Report Engine - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Compliance Tools</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> LegalOps NDA Toolkit</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> nan</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/4gM9ATeks1U71MDcBb1ck0a" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_ComplianceTools_5" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_ComplianceTools_5')">&times;</span>
+                <h2>RetailIntel Threat Auditor - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Compliance Tools</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> VaultMesh Patent Draft Pack</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Create and store detailed patent drafts with CIC-verifiable VaultMesh integrity, ready for filing or legal partnership submission.</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/3cI8wPb8g6an8b1eJj1ck03" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_ComplianceTools_6" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_ComplianceTools_6')">&times;</span>
+                <h2>AI Contract Proposal Writer (Gov/Fed) - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Compliance Tools</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> AI Clearance Accelerator</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Tools to boost, validate, and package security clearance readiness</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/7sY3cvgsA9mzcrh7gR1ck0Q" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_ComplianceTools_7" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_ComplianceTools_7')">&times;</span>
+                <h2>AI Clearance Accelerator - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Compliance Tools</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> CivIntel Recon Report Engine</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Aggregates open-source intelligence into actionable insights</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/3cIaEX0tC2Yb3ULdFf1ck15" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_ComplianceTools_8" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_ComplianceTools_8')">&times;</span>
+                <h2>FedRamp TurboTrack AI - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Compliance Tools</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> RetailIntel VisualShield™</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Monitors in-store surveillance feeds for visual anomaly detection</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/14AcN53FOfKXdvl6cN1ck1k" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_ComplianceTools_9" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_ComplianceTools_9')">&times;</span>
+                <h2>eMASS AuthoritySync™ - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Compliance Tools</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> Startup Launch Arsenal</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> nan</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/3cIfZh3FO42ffDt7gR1ck05" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_ComplianceTools_10" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_ComplianceTools_10')">&times;</span>
+                <h2>VaultMesh Patent Draft Pack - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Compliance Tools</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> Proposal Builder Plan</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Generate polished proposals with AI-powered tools for formatting, layouts, and content suggestions. Impress stakeholders with data-driven precision.</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/00w7sLdgocyLezp9oZ1ck0w" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_ComplianceTools_11" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_ComplianceTools_11')">&times;</span>
+                <h2>Proposal Builder Plan - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Compliance Tools</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> FedRamp TurboTrack AI</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Fast-track FedRAMP authorization & automation kit</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/00w14ncckfKXdvl0St1ck0L" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_ComplianceTools_12" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_ComplianceTools_12')">&times;</span>
+                <h2>Affiliate Kit - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Compliance Tools</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> RetailIntel Threat Auditor</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> Monitor, log, and defend retail POS and inventory systems</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/eVq4gz7W456jbndbx71ck10" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_ComplianceTools_13" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_ComplianceTools_13')">&times;</span>
+                <h2>LegalOps NDA Toolkit - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Compliance Tools</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> CivIntel AI Surveillance Grid</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> AI-integrated surveillance and open-source intel aggregation</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/9B6aEX2BKdCPbnd7gR1ck1f" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_ComplianceTools_14" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_ComplianceTools_14')">&times;</span>
+                <h2>Startup Launch Arsenal - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Compliance Tools</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> Dynasec Test Transaction</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> nan</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/cNieVddgo6an8b1at31ck00" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_ComplianceTools_15" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_ComplianceTools_15')">&times;</span>
+                <h2>Dynasec Test Transaction - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Compliance Tools</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> Affiliate Kit</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> nan</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/6oU8wP90842f9f5dFf1ck0q" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_CyberOperations_0" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_CyberOperations_0')">&times;</span>
+                <h2>FinShield API VaultGate™ - Operational Briefing</h2>
+                
+    <ul>
+        <li><strong>Category:</strong> Cyber Operations</li>
+        <li><strong>Product Name:</strong> FinShield API VaultGate™</li>
+        <li><strong>Overview:</strong> Protects FinTech APIs and transaction endpoints from injection attacks</li>
+        <li><strong>Benefits:</strong> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</li>
+        <li><strong>Use Cases:</strong> Enterprise protection, military-grade defense, real-time compliance auditing.</li>
+        <li><strong>Tech Edge:</strong> AI-driven, cloud-optimized, and designed for zero-day readiness.</li>
+        <li><strong>Purchase Now:</strong> <a href="https://buy.stripe.com/8x2bJ1dgoaqDgHxfNn1ck1o" target="_blank" style="color:#00ffff;">Buy with Stripe</a></li>
+    </ul>
+    
+            </div>
+        </div>
+        
+        <div id="modal_CyberOperations_1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_CyberOperations_1')">&times;</span>
+                <h2>HealthSec PHI Fortress - Operational Briefing</h2>
+                
+    <ul>
+        <li><strong>Category:</strong> Cyber Operations</li>
+        <li><strong>Product Name:</strong> HealthSec PHI Fortress</li>
+        <li><strong>Overview:</strong> Secures electronic health records (EHR) with zero-trust perimeter logic</li>
+        <li><strong>Benefits:</strong> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</li>
+        <li><strong>Use Cases:</strong> Enterprise protection, military-grade defense, real-time compliance auditing.</li>
+        <li><strong>Tech Edge:</strong> AI-driven, cloud-optimized, and designed for zero-day readiness.</li>
+        <li><strong>Purchase Now:</strong> <a href="https://buy.stripe.com/5kQ4gz3FO1U71MD1Wx1ck1j" target="_blank" style="color:#00ffff;">Buy with Stripe</a></li>
+    </ul>
+    
+            </div>
+        </div>
+        
+        <div id="modal_CyberOperations_2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_CyberOperations_2')">&times;</span>
+                <h2>FinShield Real-Time Audit Core - Operational Briefing</h2>
+                
+    <ul>
+        <li><strong>Category:</strong> Cyber Operations</li>
+        <li><strong>Product Name:</strong> FinShield Real-Time Audit Core</li>
+        <li><strong>Overview:</strong> AI auditing suite for financial networks, SOC 2 & PCI-DSS prep</li>
+        <li><strong>Benefits:</strong> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</li>
+        <li><strong>Use Cases:</strong> Enterprise protection, military-grade defense, real-time compliance auditing.</li>
+        <li><strong>Tech Edge:</strong> AI-driven, cloud-optimized, and designed for zero-day readiness.</li>
+        <li><strong>Purchase Now:</strong> <a href="https://buy.stripe.com/00w8wPa4cfKX4YPcBb1ck1e" target="_blank" style="color:#00ffff;">Buy with Stripe</a></li>
+    </ul>
+    
+            </div>
+        </div>
+        
+        <div id="modal_CyberOperations_3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_CyberOperations_3')">&times;</span>
+                <h2>HealthSec ZeroLeak Scan Engine - Operational Briefing</h2>
+                
+    <ul>
+        <li><strong>Category:</strong> Cyber Operations</li>
+        <li><strong>Product Name:</strong> HealthSec ZeroLeak Scan Engine</li>
+        <li><strong>Overview:</strong> Detects PHI/PII exposure vectors in real-time across healthcare systems</li>
+        <li><strong>Benefits:</strong> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</li>
+        <li><strong>Use Cases:</strong> Enterprise protection, military-grade defense, real-time compliance auditing.</li>
+        <li><strong>Tech Edge:</strong> AI-driven, cloud-optimized, and designed for zero-day readiness.</li>
+        <li><strong>Purchase Now:</strong> <a href="https://buy.stripe.com/6oUaEX3FO8iv76X44F1ck19" target="_blank" style="color:#00ffff;">Buy with Stripe</a></li>
+    </ul>
+    
+            </div>
+        </div>
+        
+        <div id="modal_CyberOperations_4" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_CyberOperations_4')">&times;</span>
+                <h2>FinShield FraudNet AI - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Cyber Operations</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> Global Investment Tier</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> nan</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/9B67sLgsA0Q38b1fNn1ck0p" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_CyberOperations_5" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_CyberOperations_5')">&times;</span>
+                <h2>HealthSec AI Compliance Core - Operational Briefing</h2>
+                
+    <ul>
+        <li><strong>Category:</strong> Cyber Operations</li>
+        <li><strong>Product Name:</strong> HealthSec AI Compliance Core</li>
+        <li><strong>Overview:</strong> HIPAA & HITRUST compliance accelerator with CIC visibility</li>
+        <li><strong>Benefits:</strong> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</li>
+        <li><strong>Use Cases:</strong> Enterprise protection, military-grade defense, real-time compliance auditing.</li>
+        <li><strong>Tech Edge:</strong> AI-driven, cloud-optimized, and designed for zero-day readiness.</li>
+        <li><strong>Purchase Now:</strong> <a href="https://buy.stripe.com/7sYcN57W442f76X7gR1ck0Z" target="_blank" style="color:#00ffff;">Buy with Stripe</a></li>
+    </ul>
+    
+            </div>
+        </div>
+        
+        <div id="modal_CyberOperations_6" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_CyberOperations_6')">&times;</span>
+                <h2>ZeroDay Exploit Risk Shield - Operational Briefing</h2>
+                
+    <ul>
+        <li><strong>Category:</strong> Cyber Operations</li>
+        <li><strong>Product Name:</strong> ZeroDay Exploit Risk Shield</li>
+        <li><strong>Overview:</strong> Preemptive detection suite for zero-day exposure</li>
+        <li><strong>Benefits:</strong> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</li>
+        <li><strong>Use Cases:</strong> Enterprise protection, military-grade defense, real-time compliance auditing.</li>
+        <li><strong>Tech Edge:</strong> AI-driven, cloud-optimized, and designed for zero-day readiness.</li>
+        <li><strong>Purchase Now:</strong> <a href="https://buy.stripe.com/00w3cvgsAaqDdvlfNn1ck0U" target="_blank" style="color:#00ffff;">Buy with Stripe</a></li>
+    </ul>
+    
+            </div>
+        </div>
+        
+        <div id="modal_CyberOperations_7" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_CyberOperations_7')">&times;</span>
+                <h2>VaultMesh IP Vault Elite - Operational Briefing</h2>
+                
+    <ul>
+        <li><strong>Category:</strong> Cyber Operations</li>
+        <li><strong>Product Name:</strong> VaultMesh IP Vault Elite</li>
+        <li><strong>Overview:</strong> High-security IP vault w/ smart access controls</li>
+        <li><strong>Benefits:</strong> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</li>
+        <li><strong>Use Cases:</strong> Enterprise protection, military-grade defense, real-time compliance auditing.</li>
+        <li><strong>Tech Edge:</strong> AI-driven, cloud-optimized, and designed for zero-day readiness.</li>
+        <li><strong>Purchase Now:</strong> <a href="https://buy.stripe.com/8x23cv9080Q3bndcBb1ck0P" target="_blank" style="color:#00ffff;">Buy with Stripe</a></li>
+    </ul>
+    
+            </div>
+        </div>
+        
+        <div id="modal_CyberOperations_8" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_CyberOperations_8')">&times;</span>
+                <h2>Clearance Resume Generator - Operational Briefing</h2>
+                
+    <ul>
+        <li><strong>Category:</strong> Cyber Operations</li>
+        <li><strong>Product Name:</strong> Clearance Resume Generator</li>
+        <li><strong>Overview:</strong> TS/SCI-optimized resume and career toolkit</li>
+        <li><strong>Benefits:</strong> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</li>
+        <li><strong>Use Cases:</strong> Enterprise protection, military-grade defense, real-time compliance auditing.</li>
+        <li><strong>Tech Edge:</strong> AI-driven, cloud-optimized, and designed for zero-day readiness.</li>
+        <li><strong>Purchase Now:</strong> <a href="https://buy.stripe.com/bJe4gzeksbuH62TfNn1ck0K" target="_blank" style="color:#00ffff;">Buy with Stripe</a></li>
+    </ul>
+    
+            </div>
+        </div>
+        
+        <div id="modal_CyberOperations_9" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_CyberOperations_9')">&times;</span>
+                <h2>BlueTeam SOC Overwatch - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Cyber Operations</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> Proposal Builder Kit</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> nan</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/8x228r0tC8iv76X0St1ck09" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+        <div id="modal_CyberOperations_10" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_CyberOperations_10')">&times;</span>
+                <h2>VaultMesh IP Lock - Operational Briefing</h2>
+                
+    <ul>
+        <li><strong>Category:</strong> Cyber Operations</li>
+        <li><strong>Product Name:</strong> VaultMesh IP Lock</li>
+        <li><strong>Overview:</strong> Tamper-proof, AI-secured IP registration and chain-of-custody documentation platform. Includes instant VaultMesh certification.</li>
+        <li><strong>Benefits:</strong> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</li>
+        <li><strong>Use Cases:</strong> Enterprise protection, military-grade defense, real-time compliance auditing.</li>
+        <li><strong>Tech Edge:</strong> AI-driven, cloud-optimized, and designed for zero-day readiness.</li>
+        <li><strong>Purchase Now:</strong> <a href="https://buy.stripe.com/7sY6oH2BKaqDdvlbx71ck0A" target="_blank" style="color:#00ffff;">Buy with Stripe</a></li>
+    </ul>
+    
+            </div>
+        </div>
+        
+        <div id="modal_CyberOperations_11" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_CyberOperations_11')">&times;</span>
+                <h2>Genova Smart Policy Kit - Operational Briefing</h2>
+                
+    <ul>
+        <li><strong>Category:</strong> Cyber Operations</li>
+        <li><strong>Product Name:</strong> Genova Smart Policy Kit</li>
+        <li><strong>Overview:</strong> Design adaptive policies with AI-driven insights. Simplify governance compliance and strengthen your regulatory framework.</li>
+        <li><strong>Benefits:</strong> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</li>
+        <li><strong>Use Cases:</strong> Enterprise protection, military-grade defense, real-time compliance auditing.</li>
+        <li><strong>Tech Edge:</strong> AI-driven, cloud-optimized, and designed for zero-day readiness.</li>
+        <li><strong>Purchase Now:</strong> <a href="https://buy.stripe.com/bJe5kD7W442f8b18kV1ck07" target="_blank" style="color:#00ffff;">Buy with Stripe</a></li>
+    </ul>
+    
+            </div>
+        </div>
+        
+        <div id="modal_CyberOperations_12" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_CyberOperations_12')">&times;</span>
+                <h2>Global Investment Tier - Operational Briefing</h2>
+                
+    <ul>
+        <li><strong>Category:</strong> Cyber Operations</li>
+        <li><strong>Product Name:</strong> Global Investment Tier</li>
+        <li><strong>Overview:</strong> A cutting-edge cybersecurity solution.</li>
+        <li><strong>Benefits:</strong> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</li>
+        <li><strong>Use Cases:</strong> Enterprise protection, military-grade defense, real-time compliance auditing.</li>
+        <li><strong>Tech Edge:</strong> AI-driven, cloud-optimized, and designed for zero-day readiness.</li>
+        <li><strong>Purchase Now:</strong> <a href="https://buy.stripe.com/9B67sLgsA0Q38b1fNn1ck0p" target="_blank" style="color:#00ffff;">Buy with Stripe</a></li>
+    </ul>
+    
+            </div>
+        </div>
+        
+        <div id="modal_CyberOperations_13" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_CyberOperations_13')">&times;</span>
+                <h2>Proposal Builder Kit - Operational Briefing</h2>
+                
+    <ul>
+        <li><strong>Category:</strong> Cyber Operations</li>
+        <li><strong>Product Name:</strong> Proposal Builder Kit</li>
+        <li><strong>Overview:</strong> A cutting-edge cybersecurity solution.</li>
+        <li><strong>Benefits:</strong> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</li>
+        <li><strong>Use Cases:</strong> Enterprise protection, military-grade defense, real-time compliance auditing.</li>
+        <li><strong>Tech Edge:</strong> AI-driven, cloud-optimized, and designed for zero-day readiness.</li>
+        <li><strong>Purchase Now:</strong> <a href="https://buy.stripe.com/8x228r0tC8iv76X0St1ck09" target="_blank" style="color:#00ffff;">Buy with Stripe</a></li>
+    </ul>
+    
+            </div>
+        </div>
+        
+        <div id="modal_CyberOperations_14" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal_CyberOperations_14')">&times;</span>
+                <h2>Empire Access License - Operational Briefing</h2>
+                
+    <div class="brief-grid">
+        <div class="brief-row"><span class="brief-label">Category:</span> Cyber Operations</div>
+        <div class="brief-row"><span class="brief-label">Product Name:</span> Empire Access License</div>
+        <div class="brief-row"><span class="brief-label">Overview:</span> nan</div>
+        <div class="brief-row"><span class="brief-label">Benefits:</span> Unmatched security, rapid deployment, zero-trust alignment, and seamless compliance.</div>
+        <div class="brief-row"><span class="brief-label">Use Cases:</span> Enterprise protection, military-grade defense, real-time compliance auditing.</div>
+        <div class="brief-row"><span class="brief-label">Tech Edge:</span> AI-driven, cloud-optimized, and designed for zero-day readiness.</div>
+        <div class="brief-row"><span class="brief-label">Purchase:</span> <a href="https://buy.stripe.com/fZu4gz1xGgP1crhgRr1ck04" target="_blank" style="color:#00ffff;">Buy with Stripe</a></div>
+    </div>
+    
+            </div>
+        </div>
+        
+    </main>
+
+    <script>
+    function filterProducts(category) {
+        const cards = document.querySelectorAll('.product-card');
+        cards.forEach(card => {
+            if (category === 'All' || card.classList.contains(category)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
     function openModal(id) {
-      document.getElementById(id).style.display = 'block';
+        document.getElementById(id).style.display = 'block';
     }
     function closeModal(id) {
-      document.getElementById(id).style.display = 'none';
+        document.getElementById(id).style.display = 'none';
     }
-  </script>
-
+    window.onclick = function(event) {
+        if (event.target.classList.contains('modal')) {
+            event.target.style.display = 'none';
+        }
+    }
+    </script>
 </body>
 </html>

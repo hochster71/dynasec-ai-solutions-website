@@ -1,59 +1,48 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #000;
-  color: #fff;
   font-family: 'Segoe UI', sans-serif;
-}
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 100vh;
-  padding: 60px 100px;
-  box-sizing: border-box;
-}
-.text-block {
-  flex: 1;
-}
-.text-block h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  background: #000 url('index.png') no-repeat center center fixed;
+  background-size: cover;
   color: #fff;
+  height: 100vh;
+  overflow: hidden;
 }
-.text-block p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+
+header {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1000;
 }
-.cta {
-  text-decoration: none;
-  color: #00ffff;
-  border: 2px solid #00ffff;
-  padding: 12px 24px;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
+
+.site-title {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 10px;
 }
-.cta:hover {
-  background-color: #00ffff;
-  color: #000;
-}
-.image-block {
-  flex: 1;
+
+.nav-links {
+  list-style: none;
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
 }
-.placeholder-img {
+
+.nav-links a {
+  text-decoration: none;
   color: #00ffff;
-  font-size: 1.5rem;
-  border: 2px dashed #00ffff;
-  padding: 80px;
-  text-align: center;
+  font-weight: bold;
 }
+
 footer {
+  position: absolute;
+  bottom: 2%;
+  width: 100%;
   text-align: center;
-  padding: 20px;
-  font-size: 0.85rem;
-  color: #aaa;
-  background-color: #000;
+  color: #ccc;
+  font-size: 0.9rem;
 }

@@ -1,0 +1,1 @@
+console.log('Dynasec Marketplace JS Loaded');

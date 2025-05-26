@@ -1,0 +1,42 @@
+{
+  "finance": {
+    "totalRevenue": 147500,
+    "lastTransaction": "2024-05-25 10:38 CST \u2013 AI Threat Map Core \u2013 $1,750",
+    "mrr": 12250,
+    "arr": 147000,
+    "operatingMargin": "28.3%",
+    "forecast": 8950
+  },
+  "sales": {
+    "activeLeads": 16,
+    "pendingContracts": 5,
+    "topProduct": "VaultMesh 5X Defense Suite"
+  },
+  "ops": {
+    "systemStatus": "All Systems Green",
+    "deployments": 4,
+    "alerts": {
+      "summary": "2 warnings",
+      "details": [
+        "Missing brief for AI Recon Suite",
+        "Broken Stripe link on VaultMesh Legacy"
+      ]
+    }
+  },
+  "aiAgents": {
+    "logs": [
+      {
+        "time": "2024-05-25 09:00",
+        "activity": "Deployed AI onboarding form"
+      },
+      {
+        "time": "2024-05-25 10:15",
+        "activity": "Parsed new Fed opportunity from sam.gov"
+      }
+    ]
+  },
+  "deals": {
+    "openProposals": 3,
+    "trackedContracts": 12
+  }
+}
