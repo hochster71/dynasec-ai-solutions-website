@@ -1,48 +1,90 @@
 body {
+  background-color: #0a0f14;
+  color: #d1faff;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #000 url('index.png') no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
-  height: 100vh;
-  overflow: hidden;
 }
 
-header {
-  background: rgba(0, 0, 0, 0.7);
+header, footer {
+  background: rgba(0, 0, 0, 0.5);
   padding: 20px;
   text-align: center;
-  position: relative;
-  z-index: 1000;
+  color: white;
 }
 
 .site-title {
   font-size: 2rem;
-  color: white;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   padding: 0;
+  margin: 0;
 }
 
 .nav-links a {
   text-decoration: none;
   color: #00ffff;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-footer {
-  position: absolute;
-  bottom: 2%;
-  width: 100%;
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+.dashboard-title {
   text-align: center;
-  color: #ccc;
+  font-size: 1.8rem;
+  margin: 30px auto 10px auto;
+  color: #00ffff;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.tile {
+  background: #111b26;
+  border: 1px solid #00ffff33;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00ffff22;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tile:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px #00ffff55;
+}
+
+.tile h3 {
+  margin-top: 0;
+  color: #00ffff;
+}
+
+.chat-input {
+  width: 100%;
+  background: #0e1822;
+  color: #00ffff;
+  border: 1px solid #00ffff55;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.footer-note {
   font-size: 0.9rem;
+  margin-top: 10px;
+  color: #bbb;
 }

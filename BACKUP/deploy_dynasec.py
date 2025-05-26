@@ -1,1 +1,0 @@
-# FTP deployment script placeholder

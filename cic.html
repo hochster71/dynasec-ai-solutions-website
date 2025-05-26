@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dynasec AI Solutions Command Intelligence Center (CIC) — Secure global monitoring and AI coordination system." />
+  <meta name="keywords" content="Dynasec AI, CIC, Command Dashboard, Cybersecurity, AI Ops, Vercel, Stripe, Intelligence Center" />
+  <meta name="author" content="Dynasec AI Solutions" />
+  <title>Command Intelligence Center | Dynasec AI Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="auth-modal" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:#000d14cc;z-index:1000;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+    <div style="background:#111b26;padding:30px;border-radius:12px;box-shadow:0 0 20px #00ffff55;text-align:center;">
+      <h2 style="color:#00ffff;">Commander Access</h2>
+      <input type="text" id="username" placeholder="Username" style="margin:10px;padding:10px;border-radius:6px;border:none;width:100%;">
+      <input type="password" id="password" placeholder="Password" style="margin:10px;padding:10px;border-radius:6px;border:none;width:100%;">
+      <button onclick="authCheck()" style="margin-top:10px;padding:10px 20px;background:#00ffff;border:none;border-radius:6px;color:#000;font-weight:bold;">ENTER</button>
+      <p id="auth-error" style="color:#ff6666;display:none;margin-top:10px;">Access Denied</p>
+    </div>
+  </div>
+
+  <header>
+    <h1 class="site-title">DYNASEC AI SOLUTIONS</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="dashboard-title">COMMAND INTELLIGENCE CENTER</h2>
+    <div class="dashboard">
+      <div class="tile" id="deployment-tile"><h3>Deployment Activity</h3><p>Loading Vercel feeds...</p></div>
+      <div class="tile" id="stripe-tile"><h3>Stripe Revenue</h3><p>Fetching product revenue data...</p></div>
+      <div class="tile" id="security-tile"><h3>Security Feed</h3><p>Monitoring live alerts...</p></div>
+      <div class="tile" id="nav-tile"><h3>Navigation Intelligence</h3><p>Radar tracking system ready.</p></div>
+      <div class="tile"><h3>AI Commander Chat</h3><input class="chat-input" placeholder="Enter message..." /></div>
+      <div class="tile" id="jobs-tile"><h3>Job Applications</h3><p>Tracking pipeline activity...</p></div>
+      <div class="tile" id="server-tile"><h3>Server Status</h3><p>Mapping uptime & latency.</p></div>
+      <div class="tile" id="log-tile"><h3>Communications Log</h3><p>Live system events displaying here.</p></div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 Dynasec AI Solutions. All Rights Reserved.
+    <div class="footer-note">CIC Access Secured | Commander Access Only</div>
+  </footer>
+
+  <script>
+    function authCheck() {
+      const user = document.getElementById('username').value;
+      const pass = document.getElementById('password').value;
+      if (user === 'commander' && pass === 'classifiedCommand#42') {
+        document.getElementById('auth-modal').style.display = 'none';
+      } else {
+        document.getElementById('auth-error').style.display = 'block';
+      }
+    }
+
+    setInterval(() => {
+      document.getElementById('deployment-tile').innerHTML = '<h3>Deployment Activity</h3><p>Last deployed to dynasecaisolutions.com 2 mins ago</p>';
+      document.getElementById('stripe-tile').innerHTML = '<h3>Stripe Revenue</h3><p>$2,365 in last 24 hours</p>';
+      document.getElementById('security-tile').innerHTML = '<h3>Security Feed</h3><p>No intrusions detected. Firewall status: GREEN</p>';
+      document.getElementById('jobs-tile').innerHTML = '<h3>Job Applications</h3><p>6 new roles injected | 2 responses pending</p>';
+      document.getElementById('server-tile').innerHTML = '<h3>Server Status</h3><p>Dynasec servers operational (AWS | 28ms latency)</p>';
+      document.getElementById('log-tile').innerHTML = '<h3>Communications Log</h3><p>05:04: CIC Boot Successful<br>05:06: Authenticated login</p>';
+    }, 5000);
+  </script>
+</body>
+</html>
