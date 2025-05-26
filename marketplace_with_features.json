@@ -1,1185 +1,1367 @@
 [
   {
-    "title": "Dynasec AI Module 1",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #1.",
+    "title": "Product 1",
+    "description": "Elite AI-powered cybersecurity module #1 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_001",
-    "brief_url": "/pdfs/product_001.pdf"
+    "brief_url": "/pdfs/product_1.pdf",
+    "category": "Compliance Tools",
+    "badge_color": "blue"
   },
   {
-    "title": "Dynasec AI Module 2",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #2.",
+    "title": "Product 2",
+    "description": "Elite AI-powered cybersecurity module #2 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_002",
-    "brief_url": "/pdfs/product_002.pdf"
+    "brief_url": "/pdfs/product_2.pdf",
+    "category": "Security Systems",
+    "badge_color": "red"
   },
   {
-    "title": "Dynasec AI Module 3",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #3.",
+    "title": "Product 3",
+    "description": "Elite AI-powered cybersecurity module #3 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_003",
-    "brief_url": "/pdfs/product_003.pdf"
+    "brief_url": "/pdfs/product_3.pdf",
+    "category": "Support Kits",
+    "badge_color": "orange"
   },
   {
-    "title": "Dynasec AI Module 4",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #4.",
+    "title": "Product 4",
+    "description": "Elite AI-powered cybersecurity module #4 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_004",
-    "brief_url": "/pdfs/product_004.pdf"
+    "brief_url": "/pdfs/product_4.pdf",
+    "category": "AI Modules",
+    "badge_color": "cyan"
   },
   {
-    "title": "Dynasec AI Module 5",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #5.",
+    "title": "Product 5",
+    "description": "Elite AI-powered cybersecurity module #5 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_005",
-    "brief_url": "/pdfs/product_005.pdf"
+    "brief_url": "/pdfs/product_5.pdf",
+    "category": "Compliance Tools",
+    "badge_color": "blue"
   },
   {
-    "title": "Dynasec AI Module 6",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #6.",
+    "title": "Product 6",
+    "description": "Elite AI-powered cybersecurity module #6 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_006",
-    "brief_url": "/pdfs/product_006.pdf"
+    "brief_url": "/pdfs/product_6.pdf",
+    "category": "Security Systems",
+    "badge_color": "red"
   },
   {
-    "title": "Dynasec AI Module 7",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #7.",
+    "title": "Product 7",
+    "description": "Elite AI-powered cybersecurity module #7 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_007",
-    "brief_url": "/pdfs/product_007.pdf"
+    "brief_url": "/pdfs/product_7.pdf",
+    "category": "Support Kits",
+    "badge_color": "orange"
   },
   {
-    "title": "Dynasec AI Module 8",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #8.",
+    "title": "Product 8",
+    "description": "Elite AI-powered cybersecurity module #8 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_008",
-    "brief_url": "/pdfs/product_008.pdf"
+    "brief_url": "/pdfs/product_8.pdf",
+    "category": "AI Modules",
+    "badge_color": "cyan"
   },
   {
-    "title": "Dynasec AI Module 9",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #9.",
+    "title": "Product 9",
+    "description": "Elite AI-powered cybersecurity module #9 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_009",
-    "brief_url": "/pdfs/product_009.pdf"
+    "brief_url": "/pdfs/product_9.pdf",
+    "category": "Compliance Tools",
+    "badge_color": "blue"
   },
   {
-    "title": "Dynasec AI Module 10",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #10.",
+    "title": "Product 10",
+    "description": "Elite AI-powered cybersecurity module #10 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_010",
-    "brief_url": "/pdfs/product_010.pdf"
+    "brief_url": "/pdfs/product_10.pdf",
+    "category": "Security Systems",
+    "badge_color": "red"
   },
   {
-    "title": "Dynasec AI Module 11",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #11.",
+    "title": "Product 11",
+    "description": "Elite AI-powered cybersecurity module #11 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_011",
-    "brief_url": "/pdfs/product_011.pdf"
+    "brief_url": "/pdfs/product_11.pdf",
+    "category": "Support Kits",
+    "badge_color": "orange"
   },
   {
-    "title": "Dynasec AI Module 12",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #12.",
+    "title": "Product 12",
+    "description": "Elite AI-powered cybersecurity module #12 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_012",
-    "brief_url": "/pdfs/product_012.pdf"
+    "brief_url": "/pdfs/product_12.pdf",
+    "category": "AI Modules",
+    "badge_color": "cyan"
   },
   {
-    "title": "Dynasec AI Module 13",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #13.",
+    "title": "Product 13",
+    "description": "Elite AI-powered cybersecurity module #13 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_013",
-    "brief_url": "/pdfs/product_013.pdf"
+    "brief_url": "/pdfs/product_13.pdf",
+    "category": "Compliance Tools",
+    "badge_color": "blue"
   },
   {
-    "title": "Dynasec AI Module 14",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #14.",
+    "title": "Product 14",
+    "description": "Elite AI-powered cybersecurity module #14 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_014",
-    "brief_url": "/pdfs/product_014.pdf"
+    "brief_url": "/pdfs/product_14.pdf",
+    "category": "Security Systems",
+    "badge_color": "red"
   },
   {
-    "title": "Dynasec AI Module 15",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #15.",
+    "title": "Product 15",
+    "description": "Elite AI-powered cybersecurity module #15 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_015",
-    "brief_url": "/pdfs/product_015.pdf"
+    "brief_url": "/pdfs/product_15.pdf",
+    "category": "Support Kits",
+    "badge_color": "orange"
   },
   {
-    "title": "Dynasec AI Module 16",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #16.",
+    "title": "Product 16",
+    "description": "Elite AI-powered cybersecurity module #16 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_016",
-    "brief_url": "/pdfs/product_016.pdf"
+    "brief_url": "/pdfs/product_16.pdf",
+    "category": "AI Modules",
+    "badge_color": "cyan"
   },
   {
-    "title": "Dynasec AI Module 17",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #17.",
+    "title": "Product 17",
+    "description": "Elite AI-powered cybersecurity module #17 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_017",
-    "brief_url": "/pdfs/product_017.pdf"
+    "brief_url": "/pdfs/product_17.pdf",
+    "category": "Compliance Tools",
+    "badge_color": "blue"
   },
   {
-    "title": "Dynasec AI Module 18",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #18.",
+    "title": "Product 18",
+    "description": "Elite AI-powered cybersecurity module #18 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_018",
-    "brief_url": "/pdfs/product_018.pdf"
+    "brief_url": "/pdfs/product_18.pdf",
+    "category": "Security Systems",
+    "badge_color": "red"
   },
   {
-    "title": "Dynasec AI Module 19",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #19.",
+    "title": "Product 19",
+    "description": "Elite AI-powered cybersecurity module #19 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_019",
-    "brief_url": "/pdfs/product_019.pdf"
+    "brief_url": "/pdfs/product_19.pdf",
+    "category": "Support Kits",
+    "badge_color": "orange"
   },
   {
-    "title": "Dynasec AI Module 20",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #20.",
+    "title": "Product 20",
+    "description": "Elite AI-powered cybersecurity module #20 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_020",
-    "brief_url": "/pdfs/product_020.pdf"
+    "brief_url": "/pdfs/product_20.pdf",
+    "category": "AI Modules",
+    "badge_color": "cyan"
   },
   {
-    "title": "Dynasec AI Module 21",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #21.",
+    "title": "Product 21",
+    "description": "Elite AI-powered cybersecurity module #21 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_021",
-    "brief_url": "/pdfs/product_021.pdf"
+    "brief_url": "/pdfs/product_21.pdf",
+    "category": "Compliance Tools",
+    "badge_color": "blue"
   },
   {
-    "title": "Dynasec AI Module 22",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #22.",
+    "title": "Product 22",
+    "description": "Elite AI-powered cybersecurity module #22 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_022",
-    "brief_url": "/pdfs/product_022.pdf"
+    "brief_url": "/pdfs/product_22.pdf",
+    "category": "Security Systems",
+    "badge_color": "red"
   },
   {
-    "title": "Dynasec AI Module 23",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #23.",
+    "title": "Product 23",
+    "description": "Elite AI-powered cybersecurity module #23 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_023",
-    "brief_url": "/pdfs/product_023.pdf"
+    "brief_url": "/pdfs/product_23.pdf",
+    "category": "Support Kits",
+    "badge_color": "orange"
   },
   {
-    "title": "Dynasec AI Module 24",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #24.",
+    "title": "Product 24",
+    "description": "Elite AI-powered cybersecurity module #24 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_024",
-    "brief_url": "/pdfs/product_024.pdf"
+    "brief_url": "/pdfs/product_24.pdf",
+    "category": "AI Modules",
+    "badge_color": "cyan"
   },
   {
-    "title": "Dynasec AI Module 25",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #25.",
+    "title": "Product 25",
+    "description": "Elite AI-powered cybersecurity module #25 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_025",
-    "brief_url": "/pdfs/product_025.pdf"
+    "brief_url": "/pdfs/product_25.pdf",
+    "category": "Compliance Tools",
+    "badge_color": "blue"
   },
   {
-    "title": "Dynasec AI Module 26",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #26.",
+    "title": "Product 26",
+    "description": "Elite AI-powered cybersecurity module #26 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_026",
-    "brief_url": "/pdfs/product_026.pdf"
+    "brief_url": "/pdfs/product_26.pdf",
+    "category": "Security Systems",
+    "badge_color": "red"
   },
   {
-    "title": "Dynasec AI Module 27",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #27.",
+    "title": "Product 27",
+    "description": "Elite AI-powered cybersecurity module #27 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_027",
-    "brief_url": "/pdfs/product_027.pdf"
+    "brief_url": "/pdfs/product_27.pdf",
+    "category": "Support Kits",
+    "badge_color": "orange"
   },
   {
-    "title": "Dynasec AI Module 28",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #28.",
+    "title": "Product 28",
+    "description": "Elite AI-powered cybersecurity module #28 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_028",
-    "brief_url": "/pdfs/product_028.pdf"
+    "brief_url": "/pdfs/product_28.pdf",
+    "category": "AI Modules",
+    "badge_color": "cyan"
   },
   {
-    "title": "Dynasec AI Module 29",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #29.",
+    "title": "Product 29",
+    "description": "Elite AI-powered cybersecurity module #29 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_029",
-    "brief_url": "/pdfs/product_029.pdf"
+    "brief_url": "/pdfs/product_29.pdf",
+    "category": "Compliance Tools",
+    "badge_color": "blue"
   },
   {
-    "title": "Dynasec AI Module 30",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #30.",
+    "title": "Product 30",
+    "description": "Elite AI-powered cybersecurity module #30 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_030",
-    "brief_url": "/pdfs/product_030.pdf"
+    "brief_url": "/pdfs/product_30.pdf",
+    "category": "Security Systems",
+    "badge_color": "red"
   },
   {
-    "title": "Dynasec AI Module 31",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #31.",
+    "title": "Product 31",
+    "description": "Elite AI-powered cybersecurity module #31 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_031",
-    "brief_url": "/pdfs/product_031.pdf"
+    "brief_url": "/pdfs/product_31.pdf",
+    "category": "Support Kits",
+    "badge_color": "orange"
   },
   {
-    "title": "Dynasec AI Module 32",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #32.",
+    "title": "Product 32",
+    "description": "Elite AI-powered cybersecurity module #32 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_032",
-    "brief_url": "/pdfs/product_032.pdf"
+    "brief_url": "/pdfs/product_32.pdf",
+    "category": "AI Modules",
+    "badge_color": "cyan"
   },
   {
-    "title": "Dynasec AI Module 33",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #33.",
+    "title": "Product 33",
+    "description": "Elite AI-powered cybersecurity module #33 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_033",
-    "brief_url": "/pdfs/product_033.pdf"
+    "brief_url": "/pdfs/product_33.pdf",
+    "category": "Compliance Tools",
+    "badge_color": "blue"
   },
   {
-    "title": "Dynasec AI Module 34",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #34.",
+    "title": "Product 34",
+    "description": "Elite AI-powered cybersecurity module #34 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_034",
-    "brief_url": "/pdfs/product_034.pdf"
+    "brief_url": "/pdfs/product_34.pdf",
+    "category": "Security Systems",
+    "badge_color": "red"
   },
   {
-    "title": "Dynasec AI Module 35",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #35.",
+    "title": "Product 35",
+    "description": "Elite AI-powered cybersecurity module #35 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_035",
-    "brief_url": "/pdfs/product_035.pdf"
+    "brief_url": "/pdfs/product_35.pdf",
+    "category": "Support Kits",
+    "badge_color": "orange"
   },
   {
-    "title": "Dynasec AI Module 36",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #36.",
+    "title": "Product 36",
+    "description": "Elite AI-powered cybersecurity module #36 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_036",
-    "brief_url": "/pdfs/product_036.pdf"
+    "brief_url": "/pdfs/product_36.pdf",
+    "category": "AI Modules",
+    "badge_color": "cyan"
   },
   {
-    "title": "Dynasec AI Module 37",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #37.",
+    "title": "Product 37",
+    "description": "Elite AI-powered cybersecurity module #37 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_037",
-    "brief_url": "/pdfs/product_037.pdf"
+    "brief_url": "/pdfs/product_37.pdf",
+    "category": "Compliance Tools",
+    "badge_color": "blue"
   },
   {
-    "title": "Dynasec AI Module 38",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #38.",
+    "title": "Product 38",
+    "description": "Elite AI-powered cybersecurity module #38 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_038",
-    "brief_url": "/pdfs/product_038.pdf"
+    "brief_url": "/pdfs/product_38.pdf",
+    "category": "Security Systems",
+    "badge_color": "red"
   },
   {
-    "title": "Dynasec AI Module 39",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #39.",
+    "title": "Product 39",
+    "description": "Elite AI-powered cybersecurity module #39 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_039",
-    "brief_url": "/pdfs/product_039.pdf"
+    "brief_url": "/pdfs/product_39.pdf",
+    "category": "Support Kits",
+    "badge_color": "orange"
   },
   {
-    "title": "Dynasec AI Module 40",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #40.",
+    "title": "Product 40",
+    "description": "Elite AI-powered cybersecurity module #40 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_040",
-    "brief_url": "/pdfs/product_040.pdf"
+    "brief_url": "/pdfs/product_40.pdf",
+    "category": "AI Modules",
+    "badge_color": "cyan"
   },
   {
-    "title": "Dynasec AI Module 41",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #41.",
+    "title": "Product 41",
+    "description": "Elite AI-powered cybersecurity module #41 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_041",
-    "brief_url": "/pdfs/product_041.pdf"
+    "brief_url": "/pdfs/product_41.pdf",
+    "category": "Compliance Tools",
+    "badge_color": "blue"
   },
   {
-    "title": "Dynasec AI Module 42",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #42.",
+    "title": "Product 42",
+    "description": "Elite AI-powered cybersecurity module #42 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_042",
-    "brief_url": "/pdfs/product_042.pdf"
+    "brief_url": "/pdfs/product_42.pdf",
+    "category": "Security Systems",
+    "badge_color": "red"
   },
   {
-    "title": "Dynasec AI Module 43",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #43.",
+    "title": "Product 43",
+    "description": "Elite AI-powered cybersecurity module #43 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_043",
-    "brief_url": "/pdfs/product_043.pdf"
+    "brief_url": "/pdfs/product_43.pdf",
+    "category": "Support Kits",
+    "badge_color": "orange"
   },
   {
-    "title": "Dynasec AI Module 44",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #44.",
+    "title": "Product 44",
+    "description": "Elite AI-powered cybersecurity module #44 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_044",
-    "brief_url": "/pdfs/product_044.pdf"
+    "brief_url": "/pdfs/product_44.pdf",
+    "category": "AI Modules",
+    "badge_color": "cyan"
   },
   {
-    "title": "Dynasec AI Module 45",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #45.",
+    "title": "Product 45",
+    "description": "Elite AI-powered cybersecurity module #45 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_045",
-    "brief_url": "/pdfs/product_045.pdf"
+    "brief_url": "/pdfs/product_45.pdf",
+    "category": "Compliance Tools",
+    "badge_color": "blue"
   },
   {
-    "title": "Dynasec AI Module 46",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #46.",
+    "title": "Product 46",
+    "description": "Elite AI-powered cybersecurity module #46 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_046",
-    "brief_url": "/pdfs/product_046.pdf"
+    "brief_url": "/pdfs/product_46.pdf",
+    "category": "Security Systems",
+    "badge_color": "red"
   },
   {
-    "title": "Dynasec AI Module 47",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #47.",
+    "title": "Product 47",
+    "description": "Elite AI-powered cybersecurity module #47 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_047",
-    "brief_url": "/pdfs/product_047.pdf"
+    "brief_url": "/pdfs/product_47.pdf",
+    "category": "Support Kits",
+    "badge_color": "orange"
   },
   {
-    "title": "Dynasec AI Module 48",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #48.",
+    "title": "Product 48",
+    "description": "Elite AI-powered cybersecurity module #48 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_048",
-    "brief_url": "/pdfs/product_048.pdf"
+    "brief_url": "/pdfs/product_48.pdf",
+    "category": "AI Modules",
+    "badge_color": "cyan"
   },
   {
-    "title": "Dynasec AI Module 49",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #49.",
+    "title": "Product 49",
+    "description": "Elite AI-powered cybersecurity module #49 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_049",
-    "brief_url": "/pdfs/product_049.pdf"
+    "brief_url": "/pdfs/product_49.pdf",
+    "category": "Compliance Tools",
+    "badge_color": "blue"
   },
   {
-    "title": "Dynasec AI Module 50",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #50.",
+    "title": "Product 50",
+    "description": "Elite AI-powered cybersecurity module #50 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_050",
-    "brief_url": "/pdfs/product_050.pdf"
+    "brief_url": "/pdfs/product_50.pdf",
+    "category": "Security Systems",
+    "badge_color": "red"
   },
   {
-    "title": "Dynasec AI Module 51",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #51.",
+    "title": "Product 51",
+    "description": "Elite AI-powered cybersecurity module #51 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_051",
-    "brief_url": "/pdfs/product_051.pdf"
+    "brief_url": "/pdfs/product_51.pdf",
+    "category": "Support Kits",
+    "badge_color": "orange"
   },
   {
-    "title": "Dynasec AI Module 52",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #52.",
+    "title": "Product 52",
+    "description": "Elite AI-powered cybersecurity module #52 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_052",
-    "brief_url": "/pdfs/product_052.pdf"
+    "brief_url": "/pdfs/product_52.pdf",
+    "category": "AI Modules",
+    "badge_color": "cyan"
   },
   {
-    "title": "Dynasec AI Module 53",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #53.",
+    "title": "Product 53",
+    "description": "Elite AI-powered cybersecurity module #53 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_053",
-    "brief_url": "/pdfs/product_053.pdf"
+    "brief_url": "/pdfs/product_53.pdf",
+    "category": "Compliance Tools",
+    "badge_color": "blue"
   },
   {
-    "title": "Dynasec AI Module 54",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #54.",
+    "title": "Product 54",
+    "description": "Elite AI-powered cybersecurity module #54 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_054",
-    "brief_url": "/pdfs/product_054.pdf"
+    "brief_url": "/pdfs/product_54.pdf",
+    "category": "Security Systems",
+    "badge_color": "red"
   },
   {
-    "title": "Dynasec AI Module 55",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #55.",
+    "title": "Product 55",
+    "description": "Elite AI-powered cybersecurity module #55 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_055",
-    "brief_url": "/pdfs/product_055.pdf"
+    "brief_url": "/pdfs/product_55.pdf",
+    "category": "Support Kits",
+    "badge_color": "orange"
   },
   {
-    "title": "Dynasec AI Module 56",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #56.",
+    "title": "Product 56",
+    "description": "Elite AI-powered cybersecurity module #56 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_056",
-    "brief_url": "/pdfs/product_056.pdf"
+    "brief_url": "/pdfs/product_56.pdf",
+    "category": "AI Modules",
+    "badge_color": "cyan"
   },
   {
-    "title": "Dynasec AI Module 57",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #57.",
+    "title": "Product 57",
+    "description": "Elite AI-powered cybersecurity module #57 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_057",
-    "brief_url": "/pdfs/product_057.pdf"
+    "brief_url": "/pdfs/product_57.pdf",
+    "category": "Compliance Tools",
+    "badge_color": "blue"
   },
   {
-    "title": "Dynasec AI Module 58",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #58.",
+    "title": "Product 58",
+    "description": "Elite AI-powered cybersecurity module #58 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_058",
-    "brief_url": "/pdfs/product_058.pdf"
+    "brief_url": "/pdfs/product_58.pdf",
+    "category": "Security Systems",
+    "badge_color": "red"
   },
   {
-    "title": "Dynasec AI Module 59",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #59.",
+    "title": "Product 59",
+    "description": "Elite AI-powered cybersecurity module #59 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_059",
-    "brief_url": "/pdfs/product_059.pdf"
+    "brief_url": "/pdfs/product_59.pdf",
+    "category": "Support Kits",
+    "badge_color": "orange"
   },
   {
-    "title": "Dynasec AI Module 60",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #60.",
+    "title": "Product 60",
+    "description": "Elite AI-powered cybersecurity module #60 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_060",
-    "brief_url": "/pdfs/product_060.pdf"
+    "brief_url": "/pdfs/product_60.pdf",
+    "category": "AI Modules",
+    "badge_color": "cyan"
   },
   {
-    "title": "Dynasec AI Module 61",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #61.",
+    "title": "Product 61",
+    "description": "Elite AI-powered cybersecurity module #61 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_061",
-    "brief_url": "/pdfs/product_061.pdf"
+    "brief_url": "/pdfs/product_61.pdf",
+    "category": "Compliance Tools",
+    "badge_color": "blue"
   },
   {
-    "title": "Dynasec AI Module 62",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #62.",
+    "title": "Product 62",
+    "description": "Elite AI-powered cybersecurity module #62 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_062",
-    "brief_url": "/pdfs/product_062.pdf"
+    "brief_url": "/pdfs/product_62.pdf",
+    "category": "Security Systems",
+    "badge_color": "red"
   },
   {
-    "title": "Dynasec AI Module 63",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #63.",
+    "title": "Product 63",
+    "description": "Elite AI-powered cybersecurity module #63 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_063",
-    "brief_url": "/pdfs/product_063.pdf"
+    "brief_url": "/pdfs/product_63.pdf",
+    "category": "Support Kits",
+    "badge_color": "orange"
   },
   {
-    "title": "Dynasec AI Module 64",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #64.",
+    "title": "Product 64",
+    "description": "Elite AI-powered cybersecurity module #64 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_064",
-    "brief_url": "/pdfs/product_064.pdf"
+    "brief_url": "/pdfs/product_64.pdf",
+    "category": "AI Modules",
+    "badge_color": "cyan"
   },
   {
-    "title": "Dynasec AI Module 65",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #65.",
+    "title": "Product 65",
+    "description": "Elite AI-powered cybersecurity module #65 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_065",
-    "brief_url": "/pdfs/product_065.pdf"
+    "brief_url": "/pdfs/product_65.pdf",
+    "category": "Compliance Tools",
+    "badge_color": "blue"
   },
   {
-    "title": "Dynasec AI Module 66",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #66.",
+    "title": "Product 66",
+    "description": "Elite AI-powered cybersecurity module #66 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_066",
-    "brief_url": "/pdfs/product_066.pdf"
+    "brief_url": "/pdfs/product_66.pdf",
+    "category": "Security Systems",
+    "badge_color": "red"
   },
   {
-    "title": "Dynasec AI Module 67",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #67.",
+    "title": "Product 67",
+    "description": "Elite AI-powered cybersecurity module #67 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_067",
-    "brief_url": "/pdfs/product_067.pdf"
+    "brief_url": "/pdfs/product_67.pdf",
+    "category": "Support Kits",
+    "badge_color": "orange"
   },
   {
-    "title": "Dynasec AI Module 68",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #68.",
+    "title": "Product 68",
+    "description": "Elite AI-powered cybersecurity module #68 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_068",
-    "brief_url": "/pdfs/product_068.pdf"
+    "brief_url": "/pdfs/product_68.pdf",
+    "category": "AI Modules",
+    "badge_color": "cyan"
   },
   {
-    "title": "Dynasec AI Module 69",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #69.",
+    "title": "Product 69",
+    "description": "Elite AI-powered cybersecurity module #69 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_069",
-    "brief_url": "/pdfs/product_069.pdf"
+    "brief_url": "/pdfs/product_69.pdf",
+    "category": "Compliance Tools",
+    "badge_color": "blue"
   },
   {
-    "title": "Dynasec AI Module 70",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #70.",
+    "title": "Product 70",
+    "description": "Elite AI-powered cybersecurity module #70 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_070",
-    "brief_url": "/pdfs/product_070.pdf"
+    "brief_url": "/pdfs/product_70.pdf",
+    "category": "Security Systems",
+    "badge_color": "red"
   },
   {
-    "title": "Dynasec AI Module 71",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #71.",
+    "title": "Product 71",
+    "description": "Elite AI-powered cybersecurity module #71 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_071",
-    "brief_url": "/pdfs/product_071.pdf"
+    "brief_url": "/pdfs/product_71.pdf",
+    "category": "Support Kits",
+    "badge_color": "orange"
   },
   {
-    "title": "Dynasec AI Module 72",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #72.",
+    "title": "Product 72",
+    "description": "Elite AI-powered cybersecurity module #72 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_072",
-    "brief_url": "/pdfs/product_072.pdf"
+    "brief_url": "/pdfs/product_72.pdf",
+    "category": "AI Modules",
+    "badge_color": "cyan"
   },
   {
-    "title": "Dynasec AI Module 73",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #73.",
+    "title": "Product 73",
+    "description": "Elite AI-powered cybersecurity module #73 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_073",
-    "brief_url": "/pdfs/product_073.pdf"
+    "brief_url": "/pdfs/product_73.pdf",
+    "category": "Compliance Tools",
+    "badge_color": "blue"
   },
   {
-    "title": "Dynasec AI Module 74",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #74.",
+    "title": "Product 74",
+    "description": "Elite AI-powered cybersecurity module #74 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_074",
-    "brief_url": "/pdfs/product_074.pdf"
+    "brief_url": "/pdfs/product_74.pdf",
+    "category": "Security Systems",
+    "badge_color": "red"
   },
   {
-    "title": "Dynasec AI Module 75",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #75.",
+    "title": "Product 75",
+    "description": "Elite AI-powered cybersecurity module #75 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_075",
-    "brief_url": "/pdfs/product_075.pdf"
+    "brief_url": "/pdfs/product_75.pdf",
+    "category": "Support Kits",
+    "badge_color": "orange"
   },
   {
-    "title": "Dynasec AI Module 76",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #76.",
+    "title": "Product 76",
+    "description": "Elite AI-powered cybersecurity module #76 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_076",
-    "brief_url": "/pdfs/product_076.pdf"
+    "brief_url": "/pdfs/product_76.pdf",
+    "category": "AI Modules",
+    "badge_color": "cyan"
   },
   {
-    "title": "Dynasec AI Module 77",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #77.",
+    "title": "Product 77",
+    "description": "Elite AI-powered cybersecurity module #77 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_077",
-    "brief_url": "/pdfs/product_077.pdf"
+    "brief_url": "/pdfs/product_77.pdf",
+    "category": "Compliance Tools",
+    "badge_color": "blue"
   },
   {
-    "title": "Dynasec AI Module 78",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #78.",
+    "title": "Product 78",
+    "description": "Elite AI-powered cybersecurity module #78 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_078",
-    "brief_url": "/pdfs/product_078.pdf"
+    "brief_url": "/pdfs/product_78.pdf",
+    "category": "Security Systems",
+    "badge_color": "red"
   },
   {
-    "title": "Dynasec AI Module 79",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #79.",
+    "title": "Product 79",
+    "description": "Elite AI-powered cybersecurity module #79 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_079",
-    "brief_url": "/pdfs/product_079.pdf"
+    "brief_url": "/pdfs/product_79.pdf",
+    "category": "Support Kits",
+    "badge_color": "orange"
   },
   {
-    "title": "Dynasec AI Module 80",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #80.",
+    "title": "Product 80",
+    "description": "Elite AI-powered cybersecurity module #80 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_080",
-    "brief_url": "/pdfs/product_080.pdf"
+    "brief_url": "/pdfs/product_80.pdf",
+    "category": "AI Modules",
+    "badge_color": "cyan"
   },
   {
-    "title": "Dynasec AI Module 81",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #81.",
+    "title": "Product 81",
+    "description": "Elite AI-powered cybersecurity module #81 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_081",
-    "brief_url": "/pdfs/product_081.pdf"
+    "brief_url": "/pdfs/product_81.pdf",
+    "category": "Compliance Tools",
+    "badge_color": "blue"
   },
   {
-    "title": "Dynasec AI Module 82",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #82.",
+    "title": "Product 82",
+    "description": "Elite AI-powered cybersecurity module #82 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_082",
-    "brief_url": "/pdfs/product_082.pdf"
+    "brief_url": "/pdfs/product_82.pdf",
+    "category": "Security Systems",
+    "badge_color": "red"
   },
   {
-    "title": "Dynasec AI Module 83",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #83.",
+    "title": "Product 83",
+    "description": "Elite AI-powered cybersecurity module #83 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_083",
-    "brief_url": "/pdfs/product_083.pdf"
+    "brief_url": "/pdfs/product_83.pdf",
+    "category": "Support Kits",
+    "badge_color": "orange"
   },
   {
-    "title": "Dynasec AI Module 84",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #84.",
+    "title": "Product 84",
+    "description": "Elite AI-powered cybersecurity module #84 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_084",
-    "brief_url": "/pdfs/product_084.pdf"
+    "brief_url": "/pdfs/product_84.pdf",
+    "category": "AI Modules",
+    "badge_color": "cyan"
   },
   {
-    "title": "Dynasec AI Module 85",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #85.",
+    "title": "Product 85",
+    "description": "Elite AI-powered cybersecurity module #85 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_085",
-    "brief_url": "/pdfs/product_085.pdf"
+    "brief_url": "/pdfs/product_85.pdf",
+    "category": "Compliance Tools",
+    "badge_color": "blue"
   },
   {
-    "title": "Dynasec AI Module 86",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #86.",
+    "title": "Product 86",
+    "description": "Elite AI-powered cybersecurity module #86 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_086",
-    "brief_url": "/pdfs/product_086.pdf"
+    "brief_url": "/pdfs/product_86.pdf",
+    "category": "Security Systems",
+    "badge_color": "red"
   },
   {
-    "title": "Dynasec AI Module 87",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #87.",
+    "title": "Product 87",
+    "description": "Elite AI-powered cybersecurity module #87 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_087",
-    "brief_url": "/pdfs/product_087.pdf"
+    "brief_url": "/pdfs/product_87.pdf",
+    "category": "Support Kits",
+    "badge_color": "orange"
   },
   {
-    "title": "Dynasec AI Module 88",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #88.",
+    "title": "Product 88",
+    "description": "Elite AI-powered cybersecurity module #88 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_088",
-    "brief_url": "/pdfs/product_088.pdf"
+    "brief_url": "/pdfs/product_88.pdf",
+    "category": "AI Modules",
+    "badge_color": "cyan"
   },
   {
-    "title": "Dynasec AI Module 89",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #89.",
+    "title": "Product 89",
+    "description": "Elite AI-powered cybersecurity module #89 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_089",
-    "brief_url": "/pdfs/product_089.pdf"
+    "brief_url": "/pdfs/product_89.pdf",
+    "category": "Compliance Tools",
+    "badge_color": "blue"
   },
   {
-    "title": "Dynasec AI Module 90",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #90.",
+    "title": "Product 90",
+    "description": "Elite AI-powered cybersecurity module #90 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_090",
-    "brief_url": "/pdfs/product_090.pdf"
+    "brief_url": "/pdfs/product_90.pdf",
+    "category": "Security Systems",
+    "badge_color": "red"
   },
   {
-    "title": "Dynasec AI Module 91",
-    "description": "This advanced AI system delivers tactical support and secure capability suite #91.",
+    "title": "Product 91",
+    "description": "Elite AI-powered cybersecurity module #91 engineered for operational resilience and digital dominance.",
     "features": [
-      "AI-augmented decision-making",
-      "Zero Trust compliant infrastructure",
-      "Fully CMMC Level 2 aligned",
-      "Dynamic response optimization",
-      "Ready for DoD and enterprise ops"
+      "Zero Trust native architecture",
+      "Real-time threat visualization",
+      "AI mission logic generation",
+      "Full FedRAMP & RMF alignment",
+      "Operational within all secure enclaves"
     ],
     "stripe_url": "https://buy.stripe.com/test_live_checkout_link_091",
-    "brief_url": "/pdfs/product_091.pdf"
+    "brief_url": "/pdfs/product_91.pdf",
+    "category": "Support Kits",
+    "badge_color": "orange"
   }
 ]
