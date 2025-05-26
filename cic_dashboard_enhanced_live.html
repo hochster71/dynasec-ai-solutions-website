@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CIC Command Dashboard – Dynasec AI Solutions</title>
+  <style>
+    body {
+      background-color: #000;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      padding: 20px;
+    }
+    .tile {
+      background-color: #111;
+      border: 1px solid #00f6ff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #00f6ff66;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+    }
+    .tile h2 {
+      color: #00f6ff;
+      margin-top: 0;
+    }
+    .tile ul {
+      list-style-type: none;
+      padding: 0;
+      font-size: 14px;
+    }
+    .tile li {
+      margin: 5px 0;
+      color: #ccc;
+    }
+    .tile a {
+      color: #00f6ff;
+      text-decoration: none;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .grid .tile {
+      flex: 1 1 45%;
+    }
+  </style>
+</head>
+<body>
+  <h1>CIC Command Dashboard – Dynasec AI</h1>
+
+  <!-- CIC Ops Overview Tile -->
+  <div class="tile">
+    <h2>🔧 CIC Ops Overview</h2>
+    <ul>
+      <li>🌐 <strong>Homepage:</strong> <a href="https://hochster71.github.io/dynasec-ai-platform/index.html" target="_blank">index.html</a></li>
+      <li>🧩 <strong>Marketplace:</strong> <a href="https://hochster71.github.io/dynasec-ai-platform/marketplace.html" target="_blank">marketplace.html</a></li>
+      <li>📎 <strong>PDF Briefs:</strong> 91 wired – confirm presence in /pdfs</li>
+      <li>🔊 <strong>SoundFX:</strong> Hover/Click active – /assets/sounds</li>
+      <li>🛡 <strong>CIC Access:</strong> <a href="https://hochster71.github.io/dynasec-ai-platform/cic-dashboard-enhanced.html" target="_blank">Commander View</a></li>
+      <li>📄 <strong>Legal Pages:</strong> Terms, Privacy, Refunds linked</li>
+      <li>📊 <strong>Marketplace:</strong> 91 products, 6 categories, live JSON</li>
+      <li>⏱ <strong>Last Sync:</strong> Via push_all_to_github.cmd</li>
+    </ul>
+  </div>
+
+  <!-- Live Simulation Grid -->
+  <div class="grid">
+    <div class="tile" id="revenue-tile"><h2>📈 Revenue Overview</h2><p>Loading...</p></div>
+    <div class="tile" id="transaction-feed"><h2>🧾 Transaction Feed</h2><p>Loading...</p></div>
+    <div class="tile" id="product-performance"><h2>📦 Product Performance</h2><p>Loading...</p></div>
+    <div class="tile" id="traffic-visitors"><h2>🌎 Traffic & Visitors</h2><p>Loading...</p></div>
+    <div class="tile" id="alert-feed"><h2>⚠️ Alert Feed</h2><p>Loading...</p></div>
+    <div class="tile" id="brief-engagement"><h2>📊 Brief Engagement</h2><p>Loading...</p></div>
+    <div class="tile" id="ai-log"><h2>💡 AI Chat Agent Log</h2><p>Loading...</p></div>
+    <div class="tile" id="contract-watch"><h2>💼 Contract Watch</h2><p>Loading...</p></div>
+    <div class="tile" id="email-capture"><h2>📬 Email Capture</h2><p>Loading...</p></div>
+    <div class="tile" id="infra-sync"><h2>🛠 Infra & Sync Log</h2><p>Loading...</p></div>
+  </div>
+
+  <script>
+    fetch('cic_simulated_data.json')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('revenue-tile').innerHTML += `
+          <p><strong>Total Sales:</strong> $${data.revenue_overview.total_sales}</p>
+          <p><strong>Transactions:</strong> ${data.revenue_overview.transactions}</p>
+          <p><strong>MRR:</strong> $${data.revenue_overview.mrr}</p>
+          <p><strong>ARR:</strong> $${data.revenue_overview.arr}</p>
+        `;
+
+        document.getElementById('transaction-feed').innerHTML += data.transaction_feed.map(tx =>
+          `<p><strong>${tx.product}</strong> – $${tx.amount} at ${tx.time}</p>`).join("");
+
+        document.getElementById('product-performance').innerHTML += data.product_performance.top_products.map(p =>
+          `<p><strong>${p.title}</strong>: ${p.views} views, ${p.sales} sales</p>`).join("");
+
+        document.getElementById('traffic-visitors').innerHTML += `
+          <p><strong>Live Visitors:</strong> ${data.traffic_stats.live_visitors}</p>
+          <p><strong>Today's Visits:</strong> ${data.traffic_stats.today_visits}</p>
+          <p><strong>Top Country:</strong> ${data.traffic_stats.top_country}</p>
+        `;
+
+        document.getElementById('alert-feed').innerHTML += data.alert_feed.map(a =>
+          `<p><strong>${a.type}</strong>: ${a.product}</p>`).join("");
+
+        document.getElementById('brief-engagement').innerHTML += `
+          <p><strong>Total Downloads:</strong> ${data.brief_engagement.total_downloads}</p>
+          <p><strong>Top Brief:</strong> ${data.brief_engagement.top_brief}</p>
+          <p><strong>Avg Time:</strong> ${data.brief_engagement.avg_time_on_pdf}</p>
+        `;
+
+        document.getElementById('ai-log').innerHTML += data.ai_log.map(log =>
+          `<p>${log.time} – ${log.query}</p>`).join("");
+
+        document.getElementById('contract-watch').innerHTML += data.contract_watch.map(c =>
+          `<p><strong>${c.agency}</strong>: ${c.title} – <em>${c.status}</em></p>`).join("");
+
+        document.getElementById('email-capture').innerHTML += `
+          <p><strong>Opt-ins Today:</strong> ${data.email_capture.opt_ins_today}</p>
+          <p><strong>Total Subscribers:</strong> ${data.email_capture.total_subscribers}</p>
+        `;
+
+        document.getElementById('infra-sync').innerHTML += `
+          <p><strong>Last Push:</strong> ${data.infra_sync.last_push}</p>
+          <p><strong>Status:</strong> ${data.infra_sync.pages_status}</p>
+        `;
+      });
+  </script>
+</body>
+</html>

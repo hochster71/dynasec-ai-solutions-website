@@ -1,0 +1,97 @@
+{
+  "revenue_overview": {
+    "total_sales": 23750,
+    "transactions": 94,
+    "mrr": 4200,
+    "arr": 50400
+  },
+  "transaction_feed": [
+    {
+      "id": "txn_001",
+      "product": "AI Threat Map Core",
+      "amount": 250,
+      "time": "2024-05-23 14:22"
+    },
+    {
+      "id": "txn_002",
+      "product": "VaultMesh 5X Pack",
+      "amount": 900,
+      "time": "2024-05-23 13:47"
+    },
+    {
+      "id": "txn_003",
+      "product": "Proposal Builder Kit",
+      "amount": 150,
+      "time": "2024-05-23 13:25"
+    }
+  ],
+  "product_performance": {
+    "top_products": [
+      {
+        "title": "VaultMesh 5X Pack",
+        "views": 210,
+        "sales": 12
+      },
+      {
+        "title": "AI Threat Map Core",
+        "views": 185,
+        "sales": 8
+      },
+      {
+        "title": "Proposal Builder Kit",
+        "views": 170,
+        "sales": 7
+      }
+    ]
+  },
+  "traffic_stats": {
+    "live_visitors": 19,
+    "today_visits": 457,
+    "top_country": "United States"
+  },
+  "alert_feed": [
+    {
+      "type": "Broken Stripe Link",
+      "product": "PartnerGrid License Tier 1"
+    },
+    {
+      "type": "Missing PDF",
+      "product": "Cyber Risk Analysis Kit"
+    }
+  ],
+  "brief_engagement": {
+    "total_downloads": 644,
+    "top_brief": "VaultMesh 5X Pack",
+    "avg_time_on_pdf": "2m 17s"
+  },
+  "ai_log": [
+    {
+      "time": "2024-05-23 12:03",
+      "query": "Can you help me select a compliance tool?"
+    },
+    {
+      "time": "2024-05-23 10:51",
+      "query": "What\u2019s your best-selling defense product?"
+    }
+  ],
+  "contract_watch": [
+    {
+      "agency": "DoD",
+      "title": "AI Cybersecurity RFI",
+      "status": "Open"
+    },
+    {
+      "agency": "NASA",
+      "title": "AI Model Validation",
+      "status": "Awarded"
+    }
+  ],
+  "email_capture": {
+    "opt_ins_today": 12,
+    "total_subscribers": 342
+  },
+  "infra_sync": {
+    "last_push": "2024-05-23 17:22 CST",
+    "pages_status": "OK"
+  }
+}
